@@ -3,9 +3,15 @@ Mayday Tileset for Dwarf Fortress >= 31.12
 Mayday Tileset by May Green @ http://mayday.w.staszic.waw.pl/df.php
 linux patcher by rofl0r
 
+tested with 31.14, 31.16 - OK
+
 * get dwarf fortress linux from bay12 website
 * extract it somewhere
 * copy/extract everything here into your dwarf fortress folder
 * run mayday-patch.sh
 
 after that you can port your worlds/saves/etc and have Fun.
+
+how to port your savegame: copy your data/save folder to your new DF directory.
+cd into it, delete region1/raw.
+copy raw from DF base folder into your region1 folder - done.
