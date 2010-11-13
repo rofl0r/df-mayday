@@ -11,7 +11,10 @@ then
 	echo $ERRS
 	echo "for more details see $LOG"
 else
-	echo "success! now fixing the characters in language files."
+	echo "success! "
+        echo "deleting .orig files which trigger a bug in DF..."
+	find . -name '*.orig' -exec rm -f {} \;
+        echo "now fixing the characters in language files."
 	echo "hold your breath this may take a minute or two...."
 	find ./raw/objects -name 'language*' -exec ./apply-charpatch.sh {} \;
 	echo "done!"
