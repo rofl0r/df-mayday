@@ -1,8 +1,12 @@
-#!/usr/bin/env bash
+#!/bin/sh
 # argument: file name
 # special chars in the file will be patched
 MYFILE=$1
 TMPFILE=/tmp/chfx$RANDOM.tmp
-./charfix.pl $MYFILE > $TMPFILE
+
+cat $MYFILE | tr \
+"\242\212\230\227\243\215\241\202\225\207\240\244\204\224\210\214\203\223\206\205\211\213\226" \
+"\157\145\171\165\165\151\151\145\157\143\141\156\141\157\145\151\141\157\141\141\145\151\165" > $TMPFILE
+
 cp $TMPFILE $MYFILE
 rm $TMPFILE

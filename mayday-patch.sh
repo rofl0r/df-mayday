@@ -1,11 +1,11 @@
-#!/usr/bin/env bash
+#!/bin/sh
 echo "*** mayday-patchset for POSIX by rofl0r ***"
 echo -ne "\n"
 echo "trying to apply mayday.diff...."
 LOG=mayday-patch.log
 patch -p1 --verbose < mayday.diff > $LOG
 ERRS=`cat $LOG | grep "FAILED"`
-if [[ ! -z "$ERRS" ]]
+if [ ! -z "$ERRS" ]
 then
 	echo -ne "there were some errors, manual intervention is required\n"
 	echo $ERRS
@@ -15,7 +15,6 @@ else
         echo "deleting .orig files which trigger a bug in DF..."
 	find . -name '*.orig' -exec rm -f {} \;
         echo "now fixing the characters in language files."
-	echo "hold your breath this may take a minute or two...."
 	find ./raw/objects -name 'language*' -exec ./apply-charpatch.sh {} \;
 	echo "done!"
 fi
