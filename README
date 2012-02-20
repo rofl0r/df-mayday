@@ -3,7 +3,9 @@ Mayday Tileset for Dwarf Fortress >= 31.12
 Mayday Tileset by May Green @ http://mayday.w.staszic.waw.pl/df.php
 linux patcher by rofl0r
 
-tested with 31.14, 31.16, 31.17, 31.18, 31.19, 31.21, 31.22, 31.24, 31.25 - OK
+tested with 31.14, 31.16, 31.17, 31.18, 31.19, 31.21, 31.22, 31.24, 31.25, 34.02 - OK
+34.02 brings some new stuff, needs incompatible change. checkout
+git commit be1a145e3458e106bb62835195858712030b3d37 for 31.xx
 
 * get dwarf fortress linux from bay12 website
 * extract it somewhere
