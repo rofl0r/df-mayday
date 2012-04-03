@@ -15,6 +15,7 @@ else
         echo "deleting .orig files which trigger a bug in DF..."
 	find . -name '*.orig' -exec rm -f {} \;
         echo "now fixing the characters in language files."
+	export LANG=C
 	find ./raw/objects -name 'language*' -exec ./apply-charpatch.sh {} \;
 	echo "done!"
 fi
