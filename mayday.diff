@@ -1,6 +1,6 @@
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/data/init/announcements.txt dfg/data/init/announcements.txt
-*** df_linux/data/init/announcements.txt	2012-03-23 09:58:37.000000000 +0100
---- dfg/data/init/announcements.txt	2012-03-28 16:06:18.644000198 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//data/init/announcements.txt dfg_temp//data/init/announcements.txt
+*** df_linux_temp//data/init/announcements.txt	2012-05-22 21:34:24.905000197 +0200
+--- dfg_temp//data/init/announcements.txt	2012-05-22 21:34:37.413000197 +0200
 ***************
 *** 61,64 ****
   [MIGRANT_ARRIVAL:A_D:D_D:P:R]
@@ -12,26 +12,9 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/data/init/announcements.txt 
 ! [DIG_CANCEL_WARM:A_D:D_D:R]
 ! [DIG_CANCEL_DAMP:A_D:D_D:R]
   [AMBUSH_DEFENDER:A_D:D_D:P:R]
-***************
-*** 93,95 ****
-  [CAVE_COLLAPSE:A_D:D_D:P:R]
-! [BIRTH_CITIZEN:A_D:D_D:P:R]
-  [BIRTH_ANIMAL:A_D:D_D]
---- 93,95 ----
-  [CAVE_COLLAPSE:A_D:D_D:P:R]
-! [BIRTH_CITIZEN:A_D:D_D:R]
-  [BIRTH_ANIMAL:A_D:D_D]
-***************
-*** 164,167 ****
-  [FLOUNDER_IN_LIQUID:A_D]
-- [TRAINING_DOWN_TO_SEMI_WILD:A_D:D_D]
-- [TRAINING_FULL_REVERSION:A_D:D_D:P:R]
-- [ANIMAL_TRAINING_KNOWLEDGE:A_D:D_D]
-\ No newline at end of file
---- 164 ----
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/data/init/colors.txt dfg/data/init/colors.txt
-*** df_linux/data/init/colors.txt	2012-03-23 09:58:37.000000000 +0100
---- dfg/data/init/colors.txt	2012-03-28 16:06:18.643000198 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//data/init/colors.txt dfg_temp//data/init/colors.txt
+*** df_linux_temp//data/init/colors.txt	2012-05-22 21:34:24.905000197 +0200
+--- dfg_temp//data/init/colors.txt	2012-05-22 21:34:37.412000197 +0200
 ***************
 *** 5,38 ****
   [BLACK_B:0]
@@ -77,7 +60,7 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/data/init/colors.txt dfg/dat
 ! 
 ! [GREEN_R:110]
 ! [GREEN_G:123]
-! [GREEN_B:21]
+! [GREEN_B:41]
 ! 
   [CYAN_R:0]
 ! [CYAN_G:135]
@@ -107,8 +90,8 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/data/init/colors.txt dfg/dat
 ! [LBLUE_G:150]
 ! [LBLUE_B:200]
 ! 
-! [LGREEN_R:196]
-! [LGREEN_G:219]
+! [LGREEN_R:150]
+! [LGREEN_G:180]
 ! [LGREEN_B:38]
 ! 
 ! [LCYAN_R:10]
@@ -146,18 +129,9 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/data/init/colors.txt dfg/dat
 ! [WHITE_G:210]
 ! [WHITE_B:190]
 \ No newline at end of file
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/data/init/d_init.txt dfg/data/init/d_init.txt
-*** df_linux/data/init/d_init.txt	2012-03-23 09:58:37.000000000 +0100
---- dfg/data/init/d_init.txt	2012-03-28 16:06:18.643000198 +0200
-***************
-*** 58,60 ****
-  
-! [COFFIN_NO_PETS_DEFAULT:NO]
-  
---- 58,60 ----
-  
-! [COFFIN_NO_PETS_DEFAULT:YES]
-  
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//data/init/d_init.txt dfg_temp//data/init/d_init.txt
+*** df_linux_temp//data/init/d_init.txt	2012-05-22 21:34:24.905000197 +0200
+--- dfg_temp//data/init/d_init.txt	2012-05-22 21:34:37.412000197 +0200
 ***************
 *** 71,73 ****
   
@@ -177,38 +151,79 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/data/init/d_init.txt dfg/dat
 ! [PILLAR_TILE:245]
   
 ***************
-*** 103,105 ****
+*** 83,99 ****
+  
+! [TRACK_N:208I]
+! [TRACK_S:210I]
+! [TRACK_E:198I]
+! [TRACK_W:181I]
+! [TRACK_NS:186I]
+! [TRACK_NE:200I]
+! [TRACK_NW:188I]
+! [TRACK_SE:201I]
+! [TRACK_SW:187I]
+! [TRACK_EW:205I]
+! [TRACK_NSE:204I]
+! [TRACK_NSW:185I]
+! [TRACK_NEW:202I]
+! [TRACK_SEW:203I]
+! [TRACK_NSEW:206I]
+  [TRACK_RAMP_N:30I]
+--- 83,99 ----
+  
+! [TRACK_N:208]
+! [TRACK_S:210]
+! [TRACK_E:198]
+! [TRACK_W:181]
+! [TRACK_NS:179I]
+! [TRACK_NE:192I]
+! [TRACK_NW:217I]
+! [TRACK_SE:218I]
+! [TRACK_SW:191I]
+! [TRACK_EW:196I]
+! [TRACK_NSE:195I]
+! [TRACK_NSW:180I]
+! [TRACK_NEW:193I]
+! [TRACK_SEW:194I]
+! [TRACK_NSEW:158I]
+  [TRACK_RAMP_N:30I]
+***************
+*** 124,126 ****
+  
+! [POPULATION_CAP:200]
+  
+--- 124,126 ----
+  
+! [POPULATION_CAP:150]
+  
+***************
+*** 136,138 ****
   
 ! [ENGRAVINGS_START_OBSCURED:NO]
   
---- 103,105 ----
+--- 136,138 ----
   
 ! [ENGRAVINGS_START_OBSCURED:YES]
   
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/data/init/init.txt dfg/data/init/init.txt
-*** df_linux/data/init/init.txt	2012-03-23 09:58:37.000000000 +0100
---- dfg/data/init/init.txt	2012-03-28 16:06:18.643000198 +0200
+Only in dfg_temp//data/init: embark_profiles.txt
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//data/init/init.txt dfg_temp//data/init/init.txt
+*** df_linux_temp//data/init/init.txt	2012-05-22 21:34:24.905000197 +0200
+--- dfg_temp//data/init/init.txt	2012-05-22 21:34:37.412000197 +0200
 ***************
-*** 47,55 ****
+*** 47,52 ****
   
 ! [GRAPHICS:NO]
   [GRAPHICS_WINDOWEDX:0]
   [GRAPHICS_WINDOWEDY:0]
 ! [GRAPHICS_FONT:curses_square_16x16.png]
   [GRAPHICS_FULLSCREENX:0]
-  [GRAPHICS_FULLSCREENY:0]
-! [GRAPHICS_FULLFONT:curses_square_16x16.png]
-  [GRAPHICS_BLACK_SPACE:YES]
---- 47,55 ----
+--- 47,52 ----
   
 ! [GRAPHICS:YES]
   [GRAPHICS_WINDOWEDX:0]
   [GRAPHICS_WINDOWEDY:0]
 ! [GRAPHICS_FONT:mayday.png]
   [GRAPHICS_FULLSCREENX:0]
-  [GRAPHICS_FULLSCREENY:0]
-! [GRAPHICS_FULLFONT:mayday.png]
-  [GRAPHICS_BLACK_SPACE:YES]
 ***************
 *** 76,78 ****
   
@@ -218,26 +233,19 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/data/init/init.txt dfg/data/
   
 ! [TRUETYPE:16]
   
-***************
-*** 141,143 ****
-  
-! [MACRO_MS:15]
-  
---- 141,143 ----
-  
-! [MACRO_MS:5]
-  
-Only in dfg/data/init/macros: designate bedrooms.mak
-Only in dfg/data/init/macros: dig bedrooms NE.mak
-Only in dfg/data/init/macros: dig bedrooms NW.mak
-Only in dfg/data/init/macros: mark for trade.mak
-Only in dfg/data/init/macros: place beds.mak
-Only in dfg/data/init/macros: place cabinets.mak
-Only in dfg/data/init/macros: stocks bars shortcut.mak
-Only in dfg/data/init/macros: Trade many.mak
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/creature_annelids.txt dfg/raw/objects/creature_annelids.txt
-*** df_linux/raw/objects/creature_annelids.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/creature_annelids.txt	2012-03-28 16:06:18.640000198 +0200
+Only in dfg_temp//data/init/macros: designate bedrooms.mak
+Only in dfg_temp//data/init/macros: dig bedrooms NE.mak
+Only in dfg_temp//data/init/macros: dig bedrooms NW.mak
+Only in dfg_temp//data/init/macros: dump 5 on list.mak
+Only in dfg_temp//data/init/macros: mark for trade.mak
+Only in dfg_temp//data/init/macros: place beds.mak
+Only in dfg_temp//data/init/macros: place cabinets.mak
+Only in dfg_temp//data/init/macros: stocks bars shortcut.mak
+Only in dfg_temp//data/init/macros: Trade many.mak
+Only in dfg_temp//data/init/macros: undump cages.mak
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/creature_annelids.txt dfg_temp//raw/objects/creature_annelids.txt
+*** df_linux_temp//raw/objects/creature_annelids.txt	2012-05-22 21:34:24.897000197 +0200
+--- dfg_temp//raw/objects/creature_annelids.txt	2012-05-22 21:34:37.395000197 +0200
 ***************
 *** 8,10 ****
   	[CASTE_NAME:worm:worms:worm]
@@ -247,9 +255,9 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/creature_annelid
   	[CASTE_NAME:worm:worms:worm]
 ! 	[CREATURE_TILE:138][COLOR:7:0:0]
   	[PETVALUE:10]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/creature_birds.txt dfg/raw/objects/creature_birds.txt
-*** df_linux/raw/objects/creature_birds.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/creature_birds.txt	2012-03-28 16:06:18.640000198 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/creature_birds.txt dfg_temp//raw/objects/creature_birds.txt
+*** df_linux_temp//raw/objects/creature_birds.txt	2012-05-22 21:34:24.894000197 +0200
+--- dfg_temp//raw/objects/creature_birds.txt	2012-05-22 21:34:37.395000197 +0200
 ***************
 *** 9,11 ****
   	[GENERAL_CHILD_NAME:blue jay hatchling:blue jay hatchlings]
@@ -295,24 +303,9 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/creature_birds.t
   	[GENERAL_CHILD_NAME:red-winged blackbird hatchling:red-winged blackbird hatchlings]
 ! 	[CREATURE_TILE:151][COLOR:0:0:1]
   	[PETVALUE:30][NATURAL][PET]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/creature_next_underground.txt dfg/raw/objects/creature_next_underground.txt
-*** df_linux/raw/objects/creature_next_underground.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/creature_next_underground.txt	2012-03-28 16:06:18.639000198 +0200
-***************
-*** 1510,1512 ****
-  	[MOUNT_EXOTIC]
-- 	[TRAINABLE]
-  	[NATURAL]
---- 1510,1511 ----
-***************
-*** 1754,1756 ****
-  	[PET_EXOTIC]
-- 	[TRAINABLE]
-  	[EVIL]
---- 1753,1754 ----
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/creature_other.txt dfg/raw/objects/creature_other.txt
-*** df_linux/raw/objects/creature_other.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/creature_other.txt	2012-03-28 16:06:18.639000198 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/creature_other.txt dfg_temp//raw/objects/creature_other.txt
+*** df_linux_temp//raw/objects/creature_other.txt	2012-05-22 21:34:24.895000197 +0200
+--- dfg_temp//raw/objects/creature_other.txt	2012-05-22 21:34:37.394000197 +0200
 ***************
 *** 370,372 ****
   	[CASTE_NAME:knuckle worm:knuckle worms:knuckle worm]
@@ -322,9 +315,9 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/creature_other.t
   	[CASTE_NAME:knuckle worm:knuckle worms:knuckle worm]
 ! 	[CREATURE_TILE:138][COLOR:0:0:1]
   	[PETVALUE:100]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/creature_small_ocean.txt dfg/raw/objects/creature_small_ocean.txt
-*** df_linux/raw/objects/creature_small_ocean.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/creature_small_ocean.txt	2012-03-28 16:06:18.639000198 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/creature_small_ocean.txt dfg_temp//raw/objects/creature_small_ocean.txt
+*** df_linux_temp//raw/objects/creature_small_ocean.txt	2012-05-22 21:34:24.894000197 +0200
+--- dfg_temp//raw/objects/creature_small_ocean.txt	2012-05-22 21:34:37.394000197 +0200
 ***************
 *** 8,10 ****
   	[CASTE_NAME:mussel:mussels:mussel]
@@ -514,9 +507,9 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/creature_small_o
   	[CASTE_NAME:sea nettle jellyfish:sea nettle jellyfish:sea nettle jellyfish]
 ! 	[CREATURE_TILE:136][COLOR:6:0:0]
   	[PETVALUE:10]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/creature_small_riverlake.txt dfg/raw/objects/creature_small_riverlake.txt
-*** df_linux/raw/objects/creature_small_riverlake.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/creature_small_riverlake.txt	2012-03-28 16:06:18.639000198 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/creature_small_riverlake.txt dfg_temp//raw/objects/creature_small_riverlake.txt
+*** df_linux_temp//raw/objects/creature_small_riverlake.txt	2012-05-22 21:34:24.897000197 +0200
+--- dfg_temp//raw/objects/creature_small_riverlake.txt	2012-05-22 21:34:37.394000197 +0200
 ***************
 *** 8,10 ****
   	[CASTE_NAME:lungfish:lungfish:lungfish]
@@ -616,9 +609,9 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/creature_small_r
   	[CASTE_NAME:perch:perch:perch]
 ! 	[CREATURE_TILE:136][COLOR:7:0:1]
   	[VERMIN_GROUNDER][VERMIN_FISH]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/creature_standard.txt dfg/raw/objects/creature_standard.txt
-*** df_linux/raw/objects/creature_standard.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/creature_standard.txt	2012-03-28 16:06:18.639000198 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/creature_standard.txt dfg_temp//raw/objects/creature_standard.txt
+*** df_linux_temp//raw/objects/creature_standard.txt	2012-05-22 21:34:24.897000197 +0200
+--- dfg_temp//raw/objects/creature_standard.txt	2012-05-22 21:34:37.394000197 +0200
 ***************
 *** 404,406 ****
   	[CASTE_NAME:human:humans:human]
@@ -637,9 +630,9 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/creature_standar
   	[CASTE_NAME:elf:elves:elven]
 ! 	[CREATURE_TILE:141][COLOR:3:0:0]
   	[CREATURE_SOLDIER_TILE:137]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/creature_subterranean.txt dfg/raw/objects/creature_subterranean.txt
-*** df_linux/raw/objects/creature_subterranean.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/creature_subterranean.txt	2012-03-28 16:06:18.639000198 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/creature_subterranean.txt dfg_temp//raw/objects/creature_subterranean.txt
+*** df_linux_temp//raw/objects/creature_subterranean.txt	2012-05-22 21:34:24.895000197 +0200
+--- dfg_temp//raw/objects/creature_subterranean.txt	2012-05-22 21:34:37.394000197 +0200
 ***************
 *** 1087,1089 ****
   	[CASTE_NAME:cave fish:cave fish:cave fish]
@@ -650,1993 +643,1907 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/creature_subterr
 ! 	[CREATURE_TILE:136][COLOR:7:0:1]
   	[VERMIN_FISH][VERMIN_GROUNDER][FISHITEM][IMMOBILE_LAND][VERMIN_NOTRAP]
 ***************
-*** 1225,1227 ****
+*** 1230,1232 ****
   	[CASTE_NAME:fire snake:fire snakes:fire snake]
 ! 	[CREATURE_TILE:249][COLOR:6:0:1]
   	[PETVALUE:10]
---- 1225,1227 ----
+--- 1230,1232 ----
   	[CASTE_NAME:fire snake:fire snakes:fire snake]
 ! 	[CREATURE_TILE:138][COLOR:6:0:1]
   	[PETVALUE:10]
 ***************
-*** 1265,1267 ****
+*** 1270,1272 ****
   	[CASTE_NAME:olm:olms:olm]
 ! 	[CREATURE_TILE:249][COLOR:7:0:1]
   	[PETVALUE:10]
---- 1265,1267 ----
+--- 1270,1272 ----
   	[CASTE_NAME:olm:olms:olm]
 ! 	[CREATURE_TILE:138][COLOR:7:0:1]
   	[PETVALUE:10]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/entity_default.txt dfg/raw/objects/entity_default.txt
-*** df_linux/raw/objects/entity_default.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/entity_default.txt	2012-03-28 16:06:18.638000198 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/inorganic_stone_gem.txt dfg_temp//raw/objects/inorganic_stone_gem.txt
+*** df_linux_temp//raw/objects/inorganic_stone_gem.txt	2012-05-22 21:34:24.897000197 +0200
+--- dfg_temp//raw/objects/inorganic_stone_gem.txt	2012-05-22 21:34:37.393000197 +0200
 ***************
-*** 705,706 ****
---- 705,731 ----
-  		[DEMAND_MAX:1]
-+ 	[POSITION:TAX_COLLECTOR]
-+ 		[NAME:tax collector:tax collectors]
-+ 		[SITE]
-+ 		[NUMBER:1]
-+ 		[RESPONSIBILITY:COLLECT_TAXES]
-+ 		[APPOINTED_BY:DUKE]
-+ 		[APPOINTED_BY:COUNT]
-+ 		[APPOINTED_BY:BARON]
-+ 		[PRECEDENCE:140]
-+ 		[DO_NOT_CULL]
-+ 		[COLOR:6:0:1]
-+ 		[ACCOUNT_EXEMPT]
-+ 		[MENIAL_WORK_EXEMPTION]
-+ 		[SLEEP_PRETENSION]
-+ 		[PUNISHMENT_EXEMPTION]
-+ 		[DUTY_BOUND]
-+ 		[DEMAND_MAX:1]
-+ 		[MANDATE_MAX:1]
-+ 		[REQUIRED_BOXES:2]
-+ 		[REQUIRED_CABINETS:1]
-+ 		[REQUIRED_RACKS:1]
-+ 		[REQUIRED_STANDS:1]
-+ 		[REQUIRED_OFFICE:250]
-+ 		[REQUIRED_BEDROOM:100]
-+ 		[REQUIRED_DINING:100]
-  	[POSITION:HAMMERER]
-***************
-*** 717,718 ****
---- 742,768 ----
-  		[DUTY_BOUND]
-+ 	[POSITION:DUNGEON_MASTER]
-+ 		[NAME:dungeon master:dungeon masters]
-+ 		[SITE]
-+ 		[NUMBER:1]
-+ 		[RESPONSIBILITY:TAME_EXOTICS]
-+ 		[APPOINTED_BY:DUKE]
-+ 		[APPOINTED_BY:COUNT]
-+ 		[APPOINTED_BY:BARON]
-+ 		[PRECEDENCE:90]
-+ 		[MENIAL_WORK_EXEMPTION]
-+ 		[SLEEP_PRETENSION]
-+ 		[PUNISHMENT_EXEMPTION]
-+ 		[DO_NOT_CULL]
-+ 		[COLOR:5:0:0]
-+ 		[ACCOUNT_EXEMPT]
-+ 		[DUTY_BOUND]
-+ 		[DEMAND_MAX:1]
-+ 		[REQUIRED_BOXES:1]
-+ 		[REQUIRED_CABINETS:1]
-+ 		[REQUIRED_RACKS:1]
-+ 		[REQUIRED_STANDS:1]
-+ 		[REQUIRED_OFFICE:250]
-+ 		[REQUIRED_BEDROOM:250]
-+ 		[REQUIRED_DINING:250]
-+ 		[REQUIRED_TOMB:250]
-  	[POSITION:FORCED_ADMINISTRATOR]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/inorganic_stone_gem.txt dfg/raw/objects/inorganic_stone_gem.txt
-*** df_linux/raw/objects/inorganic_stone_gem.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/inorganic_stone_gem.txt	2012-03-28 16:06:18.638000198 +0200
-***************
-*** 8,10 ****
+*** 33,35 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:0:7:1][TILE:15][IS_GEM:onyx:onyxes:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 8,10 ----
+--- 33,35 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:0:7:1][TILE:10][IS_GEM:onyx:onyxes:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 13,15 ****
+*** 40,42 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:0:7:1][TILE:15][IS_GEM:morion:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
---- 13,15 ----
+--- 40,42 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:0:7:1][TILE:10][IS_GEM:morion:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
 ***************
-*** 18,20 ****
+*** 47,49 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:0:7:1][TILE:15][IS_GEM:schorl:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 18,20 ----
+--- 47,49 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:0:7:1][TILE:10][IS_GEM:schorl:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 25,27 ****
+*** 56,58 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:1:7:1][TILE:15][IS_GEM:lace agate:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:20]
---- 25,27 ----
+--- 56,58 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:1:7:1][TILE:10][IS_GEM:lace agate:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:20]
 ***************
-*** 30,32 ****
+*** 63,65 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:1:7:1][TILE:15][IS_GEM:blue jade:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALLUVIAL:CLUSTER_SMALL:100]
---- 30,32 ----
+--- 63,65 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:1:7:1][TILE:10][IS_GEM:blue jade:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALLUVIAL:CLUSTER_SMALL:100]
 ***************
-*** 35,37 ****
+*** 70,72 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:1:7:1][TILE:15][IS_GEM:lapis lazuli:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:IGNEOUS_INTRUSIVE:CLUSTER_SMALL:100]
---- 35,37 ----
+--- 70,72 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:1:7:1][TILE:10][IS_GEM:lapis lazuli:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:IGNEOUS_INTRUSIVE:CLUSTER_SMALL:100]
 ***************
-*** 41,43 ****
+*** 78,80 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:2:7:0][TILE:15][IS_GEM:prase:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
---- 41,43 ----
+--- 78,80 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:2:7:0][TILE:10][IS_GEM:prase:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
 ***************
-*** 46,48 ****
+*** 85,87 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:2:7:0][TILE:15][IS_GEM:prase opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
---- 46,48 ----
+--- 85,87 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:2:7:0][TILE:10][IS_GEM:prase opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
 ***************
-*** 51,53 ****
+*** 92,94 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
-! [MATERIAL_VALUE:2][DISPLAY_COLOR:4:7:0][TILE:15][IS_GEM:bloodstone:STP:OVERWRITE_SOLID]
+! [MATERIAL_VALUE:2][DISPLAY_COLOR:2:7:0][TILE:15][IS_GEM:bloodstone:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 51,53 ----
+--- 92,94 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:4:7:0][TILE:10][IS_GEM:bloodstone:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 56,58 ****
+*** 99,101 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:2:7:0][TILE:15][IS_GEM:moss agate:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:20]
---- 56,58 ----
+--- 99,101 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:2:7:0][TILE:10][IS_GEM:moss agate:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:20]
 ***************
-*** 61,63 ****
+*** 106,108 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:2:7:0][TILE:15][IS_GEM:moss opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
---- 61,63 ----
+--- 106,108 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:2:7:0][TILE:10][IS_GEM:moss opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
 ***************
-*** 66,68 ****
+*** 113,115 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:2:7:0][TILE:15][IS_GEM:variscite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:BAUXITE:CLUSTER_SMALL:10]
---- 66,68 ----
+--- 113,115 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:2:7:0][TILE:10][IS_GEM:variscite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:BAUXITE:CLUSTER_SMALL:10]
 ***************
-*** 71,73 ****
+*** 120,122 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:2:7:1][TILE:15][IS_GEM:chrysoprase:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 71,73 ----
+--- 120,122 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:2:7:1][TILE:10][IS_GEM:chrysoprase:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 76,78 ****
+*** 127,129 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:3:7:1][TILE:15][IS_GEM:chrysocolla:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:MALACHITE:CLUSTER_SMALL:100]
---- 76,78 ----
+--- 127,129 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:3:7:1][TILE:10][IS_GEM:chrysocolla:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:MALACHITE:CLUSTER_SMALL:100]
 ***************
-*** 81,83 ****
+*** 134,136 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:4:7:0][TILE:15][IS_GEM:sard:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 81,83 ----
+--- 134,136 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:4:7:0][TILE:10][IS_GEM:sard:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 86,88 ****
+*** 141,143 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:4:7:0][TILE:15][IS_GEM:carnelian:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 86,88 ----
+--- 141,143 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:4:7:0][TILE:10][IS_GEM:carnelian:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 91,93 ****
+*** 148,150 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:4:7:0][TILE:15][IS_GEM:banded agate:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:20]
---- 91,93 ----
+--- 148,150 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:4:7:0][TILE:10][IS_GEM:banded agate:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:20]
 ***************
-*** 96,98 ****
+*** 155,157 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:4:7:0][TILE:15][IS_GEM:sardonyx:sardonyxes:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 96,98 ----
+--- 155,157 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:4:7:0][TILE:10][IS_GEM:sardonyx:sardonyxes:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 101,103 ****
+*** 162,164 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:4:7:1][TILE:15][IS_GEM:cherry opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
---- 101,103 ----
+--- 162,164 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:4:7:1][TILE:10][IS_GEM:cherry opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
 ***************
-*** 106,108 ****
+*** 169,171 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:5:7:0][TILE:15][IS_GEM:lavender jade:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALLUVIAL:CLUSTER_SMALL:100]
---- 106,108 ----
+--- 169,171 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:5:7:0][TILE:10][IS_GEM:lavender jade:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALLUVIAL:CLUSTER_SMALL:100]
 ***************
-*** 111,113 ****
+*** 176,178 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:5:7:1][TILE:15][IS_GEM:pink jade:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALLUVIAL:CLUSTER_SMALL:100]
---- 111,113 ----
+--- 176,178 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:5:7:1][TILE:10][IS_GEM:pink jade:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALLUVIAL:CLUSTER_SMALL:100]
 ***************
-*** 116,118 ****
+*** 183,185 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:0][TILE:15][IS_GEM:tube agate:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:20]
---- 116,118 ----
+--- 183,185 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:0][TILE:10][IS_GEM:tube agate:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:20]
 ***************
-*** 121,123 ****
+*** 190,192 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:0][TILE:15][IS_GEM:fire agate:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:20]
---- 121,123 ----
+--- 190,192 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:0][TILE:10][IS_GEM:fire agate:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:20]
 ***************
-*** 126,128 ****
+*** 197,199 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:0][TILE:15][IS_GEM:plume agate:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:20]
---- 126,128 ----
+--- 197,199 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:0][TILE:10][IS_GEM:plume agate:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:20]
 ***************
-*** 131,133 ****
+*** 204,206 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:0][TILE:15][IS_GEM:brown jasper:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 131,133 ----
+--- 204,206 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:0][TILE:10][IS_GEM:brown jasper:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 136,138 ****
+*** 211,213 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:3][DISPLAY_COLOR:6:7:0][TILE:15][IS_GEM:picture jasper:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 136,138 ----
+--- 211,213 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:3][DISPLAY_COLOR:6:7:0][TILE:10][IS_GEM:picture jasper:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 141,143 ****
+*** 218,220 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:0][TILE:15][IS_GEM:smoky quartz:smoky quartzes:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
---- 141,143 ----
+--- 218,220 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:0][TILE:10][IS_GEM:smoky quartz:smoky quartzes:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
 ***************
-*** 146,148 ****
+*** 225,227 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:6:7:0][TILE:15][IS_GEM:wax opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
---- 146,148 ----
+--- 225,227 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:6:7:0][TILE:10][IS_GEM:wax opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
 ***************
-*** 151,153 ****
+*** 232,234 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:6:7:0][TILE:15][IS_GEM:wood opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
---- 151,153 ----
+--- 232,234 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:6:7:0][TILE:10][IS_GEM:wood opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
 ***************
-*** 156,158 ****
+*** 239,241 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:6:7:0][TILE:15][IS_GEM:amber opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
---- 156,158 ----
+--- 239,241 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:6:7:0][TILE:10][IS_GEM:amber opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
 ***************
-*** 161,163 ****
+*** 246,248 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:gold opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
---- 161,163 ----
+--- 246,248 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:6:7:1][TILE:10][IS_GEM:gold opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
 ***************
-*** 166,168 ****
+*** 253,255 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:citrine:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
---- 166,168 ----
+--- 253,255 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:1][TILE:10][IS_GEM:citrine:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
 ***************
-*** 171,173 ****
+*** 260,262 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:yellow jasper:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 171,173 ----
+--- 260,262 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:1][TILE:10][IS_GEM:yellow jasper:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 176,178 ****
+*** 267,269 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:tigereye:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 176,178 ----
+--- 267,269 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:1][TILE:10][IS_GEM:tigereye:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 181,183 ****
+*** 274,276 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:tiger iron:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 181,183 ----
+--- 274,276 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:1][TILE:10][IS_GEM:tiger iron:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 186,188 ****
+*** 281,283 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:sunstone:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:BASALT:CLUSTER_SMALL:100]
---- 186,188 ----
+--- 281,283 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:1][TILE:10][IS_GEM:sunstone:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:BASALT:CLUSTER_SMALL:100]
 ***************
-*** 192,194 ****
+*** 289,291 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:resin opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
---- 192,194 ----
+--- 289,291 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:6:7:1][TILE:10][IS_GEM:resin opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
 ***************
-*** 197,199 ****
+*** 296,298 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:pyrite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
---- 197,199 ----
+--- 296,298 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:1][TILE:10][IS_GEM:pyrite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
 ***************
-*** 202,204 ****
+*** 303,305 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:clear tourmaline:STP:OVERWRITE_SOLID]
   [BASIC_COLOR:7:0]
---- 202,204 ----
+--- 303,305 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:clear tourmaline:STP:OVERWRITE_SOLID]
   [BASIC_COLOR:7:0]
 ***************
-*** 210,212 ****
+*** 313,315 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:gray chalcedony:gray chalcedonies:OVERWRITE_SOLID]
   [BASIC_COLOR:7:0]
---- 210,212 ----
+--- 313,315 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:gray chalcedony:gray chalcedonies:OVERWRITE_SOLID]
   [BASIC_COLOR:7:0]
 ***************
-*** 216,218 ****
+*** 321,323 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:dendritic agate:STP:OVERWRITE_SOLID]
   [BASIC_COLOR:7:0]
---- 216,218 ----
+--- 321,323 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:dendritic agate:STP:OVERWRITE_SOLID]
   [BASIC_COLOR:7:0]
 ***************
-*** 222,224 ****
+*** 329,331 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:shell opal:STP:OVERWRITE_SOLID]
   [BASIC_COLOR:7:0]
---- 222,224 ----
+--- 329,331 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:shell opal:STP:OVERWRITE_SOLID]
   [BASIC_COLOR:7:0]
 ***************
-*** 228,230 ****
+*** 337,339 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:bone opal:STP:OVERWRITE_SOLID]
   [BASIC_COLOR:7:0]
---- 228,230 ----
+--- 337,339 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:bone opal:STP:OVERWRITE_SOLID]
   [BASIC_COLOR:7:0]
 ***************
-*** 234,236 ****
+*** 345,347 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:white chalcedony:white chalcedonies:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 234,236 ----
+--- 345,347 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:white chalcedony:white chalcedonies:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 239,241 ****
+*** 352,354 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:fortification agate:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:20]
---- 239,241 ----
+--- 352,354 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:fortification agate:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:20]
 ***************
-*** 244,246 ****
+*** 359,361 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:milk quartz:milk quartzes:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
---- 244,246 ----
+--- 359,361 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:milk quartz:milk quartzes:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
 ***************
-*** 249,251 ****
+*** 366,368 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:moonstone:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 249,251 ----
+--- 366,368 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:moonstone:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 254,256 ****
+*** 373,375 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:white jade:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALLUVIAL:CLUSTER_SMALL:100]
---- 254,256 ----
+--- 373,375 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:2][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:white jade:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALLUVIAL:CLUSTER_SMALL:100]
 ***************
-*** 259,261 ****
+*** 380,382 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:jasper opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
---- 259,261 ----
+--- 380,382 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:jasper opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
 ***************
-*** 264,266 ****
+*** 387,389 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:pineapple opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
---- 264,266 ----
+--- 387,389 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:pineapple opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
 ***************
-*** 269,271 ****
+*** 394,396 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:onyx opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
---- 269,271 ----
+--- 394,396 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:onyx opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
 ***************
-*** 274,276 ****
+*** 401,403 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:milk opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
---- 274,276 ----
+--- 401,403 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:milk opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
 ***************
-*** 279,281 ****
+*** 408,410 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:pipe opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
---- 279,281 ----
+--- 408,410 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:10][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:pipe opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:10]
 ***************
-*** 284,286 ****
+*** 415,417 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:aventurine:STP:OVERWRITE_SOLID][DISPLAY_COLOR:2:7:0][MATERIAL_VALUE:3]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 284,286 ----
+--- 415,417 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:aventurine:STP:OVERWRITE_SOLID][DISPLAY_COLOR:2:7:0][MATERIAL_VALUE:3]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 289,291 ****
+*** 422,424 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:turquoise:STP:OVERWRITE_SOLID][DISPLAY_COLOR:3:7:1][MATERIAL_VALUE:2]
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:CLUSTER_SMALL:100]
---- 289,291 ----
+--- 422,424 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:turquoise:STP:OVERWRITE_SOLID][DISPLAY_COLOR:3:7:1][MATERIAL_VALUE:2]
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:CLUSTER_SMALL:100]
 ***************
-*** 296,298 ****
+*** 431,433 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:rose quartz:rose quartzes:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:1][MATERIAL_VALUE:3]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
---- 296,298 ----
+--- 431,433 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:rose quartz:rose quartzes:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:1][MATERIAL_VALUE:3]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
 ***************
-*** 301,303 ****
+*** 438,440 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:rock crystal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][CRYSTAL_GLASSABLE][MATERIAL_VALUE:2]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
---- 301,303 ----
+--- 438,440 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:rock crystal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][CRYSTAL_GLASSABLE][MATERIAL_VALUE:2]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
 ***************
-*** 308,310 ****
+*** 447,449 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:0:7:1][TILE:15][IS_GEM:black zircon:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
---- 308,310 ----
+--- 447,449 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:0:7:1][TILE:10][IS_GEM:black zircon:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
 ***************
-*** 314,316 ****
+*** 455,457 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:0:7:1][TILE:15][IS_GEM:black pyrope:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 314,316 ----
+--- 455,457 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:0:7:1][TILE:10][IS_GEM:black pyrope:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 321,323 ****
+*** 464,466 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:15][DISPLAY_COLOR:0:7:1][TILE:15][IS_GEM:melanite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:MARBLE:CLUSTER_SMALL:100]
---- 321,323 ----
+--- 464,466 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:15][DISPLAY_COLOR:0:7:1][TILE:10][IS_GEM:melanite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:MARBLE:CLUSTER_SMALL:100]
 ***************
-*** 326,328 ****
+*** 471,473 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:25][DISPLAY_COLOR:1:7:0][TILE:15][IS_GEM:indigo tourmaline:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 326,328 ----
+--- 471,473 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:25][DISPLAY_COLOR:1:7:0][TILE:10][IS_GEM:indigo tourmaline:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 333,335 ****
+*** 480,482 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:30][DISPLAY_COLOR:1:7:0][TILE:15][IS_GEM:blue garnet:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 333,335 ----
+--- 480,482 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:30][DISPLAY_COLOR:1:7:0][TILE:10][IS_GEM:blue garnet:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 340,342 ****
+*** 489,491 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:30][DISPLAY_COLOR:2:7:0][TILE:15][IS_GEM:tsavorite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:MARBLE:CLUSTER_SMALL:100]
---- 340,342 ----
+--- 489,491 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:30][DISPLAY_COLOR:2:7:0][TILE:10][IS_GEM:tsavorite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:MARBLE:CLUSTER_SMALL:100]
 ***************
-*** 345,347 ****
+*** 496,498 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:2:7:0][TILE:15][IS_GEM:green tourmaline:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 345,347 ----
+--- 496,498 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:2:7:0][TILE:10][IS_GEM:green tourmaline:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 352,354 ****
+*** 505,507 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:30][DISPLAY_COLOR:2:7:0][TILE:15][IS_GEM:demantoid:STP:OVERWRITE_SOLID]
   green garnet found with chromium ores
---- 352,354 ----
+--- 505,507 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:30][DISPLAY_COLOR:2:7:0][TILE:10][IS_GEM:demantoid:STP:OVERWRITE_SOLID]
   green garnet found with chromium ores
 ***************
-*** 358,360 ****
+*** 513,515 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:2:7:0][TILE:15][IS_GEM:green zircon:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
---- 358,360 ----
+--- 513,515 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:2:7:0][TILE:10][IS_GEM:green zircon:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
 ***************
-*** 364,366 ****
+*** 521,523 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:2:7:1][TILE:15][IS_GEM:green jade:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALLUVIAL:CLUSTER_SMALL:100]
---- 364,366 ----
+--- 521,523 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:2:7:1][TILE:10][IS_GEM:green jade:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALLUVIAL:CLUSTER_SMALL:100]
 ***************
-*** 369,371 ****
+*** 528,530 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:2:7:1][TILE:15][IS_GEM:heliodor:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
---- 369,371 ----
+--- 528,530 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:2:7:1][TILE:10][IS_GEM:heliodor:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 ***************
-*** 376,378 ****
+*** 537,539 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:2:7:1][TILE:15][IS_GEM:peridot:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GABBRO:CLUSTER_SMALL:100]
---- 376,378 ----
+--- 537,539 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:2:7:1][TILE:10][IS_GEM:peridot:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GABBRO:CLUSTER_SMALL:100]
 ***************
-*** 381,383 ****
+*** 544,546 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:4:7:0][TILE:15][IS_GEM:red zircon:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
---- 381,383 ----
+--- 544,546 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:4:7:0][TILE:10][IS_GEM:red zircon:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
 ***************
-*** 387,389 ****
+*** 552,554 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:15][DISPLAY_COLOR:4:7:0][TILE:15][IS_GEM:red tourmaline:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 387,389 ----
+--- 552,554 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:15][DISPLAY_COLOR:4:7:0][TILE:10][IS_GEM:red tourmaline:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 394,396 ****
+*** 561,563 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:4:7:0][TILE:15][IS_GEM:red pyrope:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 394,396 ----
+--- 561,563 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:4:7:0][TILE:10][IS_GEM:red pyrope:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 400,402 ****
+*** 569,571 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:4:7:0][TILE:15][IS_GEM:almandine:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 400,402 ----
+--- 569,571 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:4:7:0][TILE:10][IS_GEM:almandine:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 407,409 ****
+*** 578,580 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:4:7:0][TILE:15][IS_GEM:red grossular:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:MARBLE:CLUSTER_SMALL:100]
---- 407,409 ----
+--- 578,580 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:4:7:0][TILE:10][IS_GEM:red grossular:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:MARBLE:CLUSTER_SMALL:100]
 ***************
-*** 412,414 ****
+*** 585,587 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:15][DISPLAY_COLOR:4:7:1][TILE:15][IS_GEM:pink tourmaline:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 412,414 ----
+--- 585,587 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:15][DISPLAY_COLOR:4:7:1][TILE:10][IS_GEM:pink tourmaline:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 419,421 ****
+*** 594,596 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:4:7:1][TILE:15][IS_GEM:red beryl:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:1]
---- 419,421 ----
+--- 594,596 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:4:7:1][TILE:10][IS_GEM:red beryl:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:1]
 ***************
-*** 426,428 ****
+*** 603,605 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:15][DISPLAY_COLOR:4:7:1][TILE:15][IS_GEM:fire opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
---- 426,428 ----
+--- 603,605 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:15][DISPLAY_COLOR:4:7:1][TILE:10][IS_GEM:fire opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
 ***************
-*** 431,433 ****
+*** 610,612 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:0][TILE:15][IS_GEM:rhodolite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 431,433 ----
+--- 610,612 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:0][TILE:10][IS_GEM:rhodolite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 437,439 ****
+*** 618,620 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:0][TILE:15][IS_GEM:purple spinel:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 437,439 ----
+--- 618,620 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:0][TILE:10][IS_GEM:purple spinel:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 444,446 ****
+*** 627,629 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:1][TILE:15][IS_GEM:alexandrite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
---- 444,446 ----
+--- 627,629 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:1][TILE:10][IS_GEM:alexandrite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 ***************
-*** 452,454 ****
+*** 638,640 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:1][TILE:15][IS_GEM:tanzanite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GABBRO:CLUSTER_SMALL:100]
---- 452,454 ----
+--- 638,640 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:1][TILE:10][IS_GEM:tanzanite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GABBRO:CLUSTER_SMALL:100]
 ***************
-*** 457,459 ****
+*** 646,648 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:1][TILE:15][IS_GEM:morganite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
---- 457,459 ----
+--- 646,648 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:1][TILE:10][IS_GEM:morganite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 ***************
-*** 464,466 ****
+*** 655,657 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:1][TILE:15][IS_GEM:violet spessartine:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 464,466 ----
+--- 655,657 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:1][TILE:10][IS_GEM:violet spessartine:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 470,472 ****
+*** 663,665 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:1][TILE:15][IS_GEM:pink garnet:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 470,472 ----
+--- 663,665 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:1][TILE:10][IS_GEM:pink garnet:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 477,479 ****
+*** 672,674 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:1][TILE:15][IS_GEM:kunzite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
---- 477,479 ----
+--- 672,674 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:5:7:1][TILE:10][IS_GEM:kunzite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 ***************
-*** 482,484 ****
+*** 679,681 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:0][TILE:15][IS_GEM:cinnamon grossular:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:MARBLE:CLUSTER_SMALL:100]
---- 482,484 ----
+--- 679,681 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:0][TILE:10][IS_GEM:cinnamon grossular:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:MARBLE:CLUSTER_SMALL:100]
 ***************
-*** 487,489 ****
+*** 686,688 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:0][TILE:15][IS_GEM:honey yellow beryl:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
---- 487,489 ----
+--- 686,688 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:0][TILE:10][IS_GEM:honey yellow beryl:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 ***************
-*** 494,496 ****
+*** 695,697 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:15][DISPLAY_COLOR:6:7:0][TILE:15][IS_GEM:jelly opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
---- 494,496 ----
+--- 695,697 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:15][DISPLAY_COLOR:6:7:0][TILE:10][IS_GEM:jelly opal:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
 ***************
-*** 499,501 ****
+*** 702,704 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:0][TILE:15][IS_GEM:brown zircon:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
---- 499,501 ----
+--- 702,704 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:0][TILE:10][IS_GEM:brown zircon:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
 ***************
-*** 505,507 ****
+*** 710,712 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:yellow zircon:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
---- 505,507 ----
+--- 710,712 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:1][TILE:10][IS_GEM:yellow zircon:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
 ***************
-*** 511,513 ****
+*** 718,720 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:golden beryl:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
---- 511,513 ----
+--- 718,720 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:1][TILE:10][IS_GEM:golden beryl:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 ***************
-*** 518,520 ****
+*** 727,729 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:yellow spessartine:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 518,520 ----
+--- 727,729 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:1][TILE:10][IS_GEM:yellow spessartine:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 524,526 ****
+*** 735,737 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:topaz:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
---- 524,526 ----
+--- 735,737 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:1][TILE:10][IS_GEM:topaz:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 ***************
-*** 530,532 ****
+*** 743,745 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:topazolite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:MARBLE:CLUSTER_SMALL:100]
---- 530,532 ----
+--- 743,745 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:1][TILE:10][IS_GEM:topazolite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:MARBLE:CLUSTER_SMALL:100]
 ***************
-*** 535,537 ****
+*** 750,752 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:yellow grossular:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:MARBLE:CLUSTER_SMALL:100]
---- 535,537 ----
+--- 750,752 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:1][TILE:10][IS_GEM:yellow grossular:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:MARBLE:CLUSTER_SMALL:100]
 ***************
-*** 540,542 ****
+*** 757,759 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:rubicelle:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 540,542 ----
+--- 757,759 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:6:7:1][TILE:10][IS_GEM:rubicelle:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 547,549 ****
+*** 766,768 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:clear garnet:STP:OVERWRITE_SOLID]
   [BASIC_COLOR:7:0]
---- 547,549 ----
+--- 766,768 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:clear garnet:STP:OVERWRITE_SOLID]
   [BASIC_COLOR:7:0]
 ***************
-*** 554,556 ****
+*** 775,777 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:goshenite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
---- 554,556 ----
+--- 775,777 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:goshenite:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 ***************
-*** 561,563 ****
+*** 784,786 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:cat's eye:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
---- 561,563 ----
+--- 784,786 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:20][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:cat's eye:STP:OVERWRITE_SOLID]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 ***************
-*** 568,570 ****
+*** 793,795 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:25][DISPLAY_COLOR:7:7:1][TILE:15][IS_GEM:clear zircon:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
---- 568,570 ----
+--- 793,795 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [MATERIAL_VALUE:25][DISPLAY_COLOR:7:7:1][TILE:10][IS_GEM:clear zircon:STP:OVERWRITE_SOLID]
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
 ***************
-*** 574,576 ****
+*** 801,803 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:amethyst:STP:OVERWRITE_SOLID][DISPLAY_COLOR:5:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
---- 574,576 ----
+--- 801,803 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:amethyst:STP:OVERWRITE_SOLID][DISPLAY_COLOR:5:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
 ***************
-*** 579,581 ****
+*** 808,810 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:aquamarine:STP:OVERWRITE_SOLID][DISPLAY_COLOR:3:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
---- 579,581 ----
+--- 808,810 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:aquamarine:STP:OVERWRITE_SOLID][DISPLAY_COLOR:3:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 ***************
-*** 586,588 ****
+*** 817,819 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:red spinel:STP:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:0][MATERIAL_VALUE:20]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 586,588 ----
+--- 817,819 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:red spinel:STP:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:0][MATERIAL_VALUE:20]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 593,595 ****
+*** 826,828 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:chrysoberyl:STP:OVERWRITE_SOLID][DISPLAY_COLOR:2:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
---- 593,595 ----
+--- 826,828 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:chrysoberyl:STP:OVERWRITE_SOLID][DISPLAY_COLOR:2:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 ***************
-*** 600,602 ****
+*** 835,837 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:precious fire opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
---- 600,602 ----
+--- 835,837 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:precious fire opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
 ***************
-*** 605,607 ****
+*** 842,844 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:red flash opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
---- 605,607 ----
+--- 842,844 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:red flash opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
 ***************
-*** 610,612 ****
+*** 849,851 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:black opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:0:7:1][MATERIAL_VALUE:30]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
---- 610,612 ----
+--- 849,851 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:black opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:0:7:1][MATERIAL_VALUE:30]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
 ***************
-*** 615,617 ****
+*** 856,858 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:white opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
---- 615,617 ----
+--- 856,858 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:white opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
 ***************
-*** 620,622 ****
+*** 863,865 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:crystal opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
---- 620,622 ----
+--- 863,865 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:crystal opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
 ***************
-*** 625,627 ****
+*** 870,872 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:claro opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:1:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
---- 625,627 ----
+--- 870,872 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:claro opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:1:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
 ***************
-*** 630,632 ****
+*** 877,879 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:levin opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:6:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
---- 630,632 ----
+--- 877,879 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:levin opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:6:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
 ***************
-*** 635,637 ****
+*** 884,886 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:harlequin opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
---- 635,637 ----
+--- 884,886 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:harlequin opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
 ***************
-*** 640,642 ****
+*** 891,893 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:pinfire opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
---- 640,642 ----
+--- 891,893 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:pinfire opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
 ***************
-*** 645,647 ****
+*** 898,900 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:bandfire opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
---- 645,647 ----
+--- 898,900 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:bandfire opal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][MATERIAL_VALUE:20]
   [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:8]
 ***************
-*** 650,652 ****
+*** 905,907 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:light yellow diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][MATERIAL_VALUE:30]
   [SPEC_HEAT:409]
---- 650,652 ----
+--- 905,907 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:light yellow diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][MATERIAL_VALUE:30]
   [SPEC_HEAT:409]
 ***************
-*** 662,664 ****
+*** 918,920 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:faint yellow diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:6:7:0][MATERIAL_VALUE:40]
   [SPEC_HEAT:409]
---- 662,664 ----
+--- 918,920 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:faint yellow diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:6:7:0][MATERIAL_VALUE:40]
   [SPEC_HEAT:409]
 ***************
-*** 672,674 ****
+*** 929,931 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:emerald:STP:OVERWRITE_SOLID][DISPLAY_COLOR:2:7:0][MATERIAL_VALUE:40]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
---- 672,674 ----
+--- 929,931 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:emerald:STP:OVERWRITE_SOLID][DISPLAY_COLOR:2:7:0][MATERIAL_VALUE:40]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 ***************
-*** 679,681 ****
+*** 938,940 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:ruby:rubies:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:0][MATERIAL_VALUE:40]
   [ENVIRONMENT_SPEC:BAUXITE:CLUSTER_SMALL:100]
---- 679,681 ----
+--- 938,940 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:ruby:rubies:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:0][MATERIAL_VALUE:40]
   [ENVIRONMENT_SPEC:BAUXITE:CLUSTER_SMALL:100]
 ***************
-*** 684,686 ****
+*** 945,947 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:sapphire:STP:OVERWRITE_SOLID][DISPLAY_COLOR:1:7:0][MATERIAL_VALUE:40]
   [ENVIRONMENT_SPEC:BAUXITE:CLUSTER_SMALL:100]
---- 684,686 ----
+--- 945,947 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:sapphire:STP:OVERWRITE_SOLID][DISPLAY_COLOR:1:7:0][MATERIAL_VALUE:40]
   [ENVIRONMENT_SPEC:BAUXITE:CLUSTER_SMALL:100]
 ***************
-*** 691,693 ****
+*** 954,956 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:clear diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][MATERIAL_VALUE:60]
   [SPEC_HEAT:409]
---- 691,693 ----
+--- 954,956 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:clear diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:7:7:1][MATERIAL_VALUE:60]
   [SPEC_HEAT:409]
 ***************
-*** 701,703 ****
+*** 965,967 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:red diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:0][MATERIAL_VALUE:60]
   [SPEC_HEAT:409]
---- 701,703 ----
+--- 965,967 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:red diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:0][MATERIAL_VALUE:60]
   [SPEC_HEAT:409]
 ***************
-*** 711,713 ****
+*** 976,978 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:green diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:2:7:0][MATERIAL_VALUE:60]
   [SPEC_HEAT:409]
---- 711,713 ----
+--- 976,978 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:green diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:2:7:0][MATERIAL_VALUE:60]
   [SPEC_HEAT:409]
 ***************
-*** 721,723 ****
+*** 987,989 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:blue diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:1:7:0][MATERIAL_VALUE:60]
   [SPEC_HEAT:409]
---- 721,723 ----
+--- 987,989 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:blue diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:1:7:0][MATERIAL_VALUE:60]
   [SPEC_HEAT:409]
 ***************
-*** 731,733 ****
+*** 998,1000 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:yellow diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:6:7:1][MATERIAL_VALUE:60]
   [SPEC_HEAT:409]
---- 731,733 ----
+--- 998,1000 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:yellow diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:6:7:1][MATERIAL_VALUE:60]
   [SPEC_HEAT:409]
 ***************
-*** 741,743 ****
+*** 1009,1011 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:black diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:0:7:1][MATERIAL_VALUE:60]
   [SPEC_HEAT:409]
---- 741,743 ----
+--- 1009,1011 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:black diamond:STP:OVERWRITE_SOLID][DISPLAY_COLOR:0:7:1][MATERIAL_VALUE:60]
   [SPEC_HEAT:409]
 ***************
-*** 751,753 ****
+*** 1020,1022 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:star sapphire:STP:OVERWRITE_SOLID][DISPLAY_COLOR:1:7:1][MATERIAL_VALUE:60]
   [ENVIRONMENT_SPEC:SAPPHIRE:CLUSTER_ONE:1]
---- 751,753 ----
+--- 1020,1022 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:star sapphire:STP:OVERWRITE_SOLID][DISPLAY_COLOR:1:7:1][MATERIAL_VALUE:60]
   [ENVIRONMENT_SPEC:SAPPHIRE:CLUSTER_ONE:1]
 ***************
-*** 756,758 ****
+*** 1027,1029 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:15][IS_GEM:star ruby:star rubies:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:1][MATERIAL_VALUE:60]
   [ENVIRONMENT_SPEC:RUBY:CLUSTER_ONE:1]
-\ No newline at end of file
---- 756,758 ----
+--- 1027,1029 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:star ruby:star rubies:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:1][MATERIAL_VALUE:60]
   [ENVIRONMENT_SPEC:RUBY:CLUSTER_ONE:1]
-\ No newline at end of file
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/inorganic_stone_layer.txt dfg/raw/objects/inorganic_stone_layer.txt
-*** df_linux/raw/objects/inorganic_stone_layer.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/inorganic_stone_layer.txt	2012-03-28 16:06:18.638000198 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/inorganic_stone_layer.txt dfg_temp//raw/objects/inorganic_stone_layer.txt
+*** df_linux_temp//raw/objects/inorganic_stone_layer.txt	2012-05-22 21:34:24.897000197 +0200
+--- dfg_temp//raw/objects/inorganic_stone_layer.txt	2012-05-22 21:34:37.393000197 +0200
 ***************
-*** 12,14 ****
+*** 16,18 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:sandstone][DISPLAY_COLOR:6:7:0][TILE:'#']
   [SEDIMENTARY][AQUIFER][SEDIMENTARY_OCEAN_SHALLOW]
---- 12,14 ----
+--- 16,18 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:sandstone][DISPLAY_COLOR:6:7:0][TILE:28]
   [SEDIMENTARY][AQUIFER][SEDIMENTARY_OCEAN_SHALLOW]
 ***************
-*** 19,21 ****
+*** 24,26 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:siltstone][DISPLAY_COLOR:6:7:0][TILE:'%']
   [SEDIMENTARY]
---- 19,21 ----
+--- 24,26 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:siltstone][DISPLAY_COLOR:6:7:0][TILE:28]
   [SEDIMENTARY]
 ***************
-*** 25,27 ****
+*** 31,33 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:mudstone][DISPLAY_COLOR:6:7:0][TILE:247]
   [SEDIMENTARY]
---- 25,27 ----
+--- 31,33 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:mudstone][DISPLAY_COLOR:6:7:0][TILE:28]
   [SEDIMENTARY]
 ***************
-*** 31,33 ****
+*** 38,40 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:shale][DISPLAY_COLOR:0:7:1][TILE:'.']
   [SEDIMENTARY][SEDIMENTARY_OCEAN_SHALLOW]
---- 31,33 ----
+--- 38,40 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:shale][DISPLAY_COLOR:0:7:1][TILE:28]
   [SEDIMENTARY][SEDIMENTARY_OCEAN_SHALLOW]
 ***************
-*** 37,39 ****
+*** 45,47 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:claystone][DISPLAY_COLOR:0:7:1][TILE:',']
   [SEDIMENTARY]
---- 37,39 ----
+--- 45,47 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:claystone][DISPLAY_COLOR:0:7:1][TILE:28]
   [SEDIMENTARY]
 ***************
-*** 43,45 ****
+*** 52,54 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:rock salt][DISPLAY_COLOR:7:7:1][TILE:'#']
   [SEDIMENTARY]
---- 43,45 ----
+--- 52,54 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:rock salt][DISPLAY_COLOR:7:7:1][TILE:28]
   [SEDIMENTARY]
 ***************
-*** 52,54 ****
+*** 61,63 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:limestone][DISPLAY_COLOR:7:7:1][TILE:178][REACTION_CLASS:FLUX]
   [SEDIMENTARY][SEDIMENTARY_OCEAN_DEEP]
---- 52,54 ----
+--- 61,63 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:limestone][DISPLAY_COLOR:7:7:1][TILE:199][REACTION_CLASS:FLUX]
   [SEDIMENTARY][SEDIMENTARY_OCEAN_DEEP]
 ***************
-*** 60,62 ****
+*** 70,72 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:conglomerate][DISPLAY_COLOR:6:7:0][TILE:236]
   [SEDIMENTARY][AQUIFER][SEDIMENTARY_OCEAN_SHALLOW]
---- 60,62 ----
+--- 70,72 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:conglomerate][DISPLAY_COLOR:6:7:0][TILE:28]
   [SEDIMENTARY][AQUIFER][SEDIMENTARY_OCEAN_SHALLOW]
 ***************
-*** 66,68 ****
+*** 77,79 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:dolomite][DISPLAY_COLOR:7:7:1][TILE:'`'][REACTION_CLASS:FLUX]
   [SEDIMENTARY]
---- 66,68 ----
+--- 77,79 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:dolomite][DISPLAY_COLOR:7:7:1][TILE:199][REACTION_CLASS:FLUX]
   [SEDIMENTARY]
 ***************
-*** 75,77 ****
+*** 87,89 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:chert][DISPLAY_COLOR:6:7:0][TILE:'=']
   [SEDIMENTARY]
---- 75,77 ----
+--- 87,89 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:chert][DISPLAY_COLOR:6:7:0][TILE:28]
   [SEDIMENTARY]
 ***************
-*** 82,84 ****
+*** 95,97 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:chalk][DISPLAY_COLOR:7:7:1][TILE:176][REACTION_CLASS:FLUX]
   [SEDIMENTARY]
---- 82,84 ----
+--- 95,97 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:chalk][DISPLAY_COLOR:7:7:1][TILE:199][REACTION_CLASS:FLUX]
   [SEDIMENTARY]
 ***************
-*** 90,92 ****
+*** 104,106 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:granite][DISPLAY_COLOR:7:0:0][TILE:178]
   [IGNEOUS_INTRUSIVE]
---- 90,92 ----
+--- 104,106 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:granite][DISPLAY_COLOR:7:0:0][TILE:18]
   [IGNEOUS_INTRUSIVE]
 ***************
-*** 97,99 ****
+*** 112,114 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:diorite][DISPLAY_COLOR:0:7:1][TILE:176]
   [IGNEOUS_INTRUSIVE]
---- 97,99 ----
+--- 112,114 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:diorite][DISPLAY_COLOR:0:7:1][TILE:18]
   [IGNEOUS_INTRUSIVE]
 ***************
-*** 104,106 ****
+*** 120,122 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:gabbro][DISPLAY_COLOR:0:7:1][TILE:177]
   [IGNEOUS_INTRUSIVE]
---- 104,106 ----
+--- 120,122 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:gabbro][DISPLAY_COLOR:0:7:1][TILE:18]
   [IGNEOUS_INTRUSIVE]
 ***************
-*** 111,113 ****
+*** 128,130 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:rhyolite][DISPLAY_COLOR:0:7:1][TILE:',']
   [IGNEOUS_EXTRUSIVE]
---- 111,113 ----
+--- 128,130 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:rhyolite][DISPLAY_COLOR:0:7:1][TILE:18]
   [IGNEOUS_EXTRUSIVE]
 ***************
-*** 118,120 ****
+*** 136,138 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:basalt][DISPLAY_COLOR:0:7:1][TILE:'#']
   [IGNEOUS_EXTRUSIVE]
---- 118,120 ----
+--- 136,138 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:basalt][DISPLAY_COLOR:0:7:1][TILE:18]
   [IGNEOUS_EXTRUSIVE]
 ***************
-*** 125,127 ****
+*** 144,146 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:andesite][DISPLAY_COLOR:0:7:1][TILE:236]
   [IGNEOUS_EXTRUSIVE]
---- 125,127 ----
+--- 144,146 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:andesite][DISPLAY_COLOR:0:7:1][TILE:18]
   [IGNEOUS_EXTRUSIVE]
 ***************
-*** 132,134 ****
+*** 152,154 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:dacite][DISPLAY_COLOR:0:7:1][TILE:'.']
   [BASIC_COLOR:7:0]
---- 132,134 ----
+--- 152,154 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:dacite][DISPLAY_COLOR:0:7:1][TILE:18]
   [BASIC_COLOR:7:0]
 ***************
-*** 141,143 ****
+*** 162,164 ****
   	[BOILING_POINT:16000]
 ! [STATE_NAME_ADJ:ALL_SOLID:obsidian][DISPLAY_COLOR:0:7:1][TILE:177][LAVA]
   [MAX_EDGE:20000]
---- 141,143 ----
+--- 162,164 ----
   	[BOILING_POINT:16000]
 ! [STATE_NAME_ADJ:ALL_SOLID:obsidian][DISPLAY_COLOR:0:7:1][TILE:18][LAVA]
   [MAX_EDGE:20000]
 ***************
-*** 150,152 ****
+*** 172,174 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:quartzite][DISPLAY_COLOR:7:7:1][TILE:'-']
   [METAMORPHIC]
---- 150,152 ----
+--- 172,174 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:quartzite][DISPLAY_COLOR:7:7:1][TILE:29]
   [METAMORPHIC]
 ***************
-*** 158,160 ****
+*** 181,183 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:slate][DISPLAY_COLOR:0:7:1][TILE:'%']
   [METAMORPHIC]
---- 158,160 ----
+--- 181,183 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:slate][DISPLAY_COLOR:0:7:1][TILE:29]
   [METAMORPHIC]
 ***************
-*** 164,166 ****
+*** 188,190 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:phyllite][DISPLAY_COLOR:0:7:1][TILE:'-']
   [BASIC_COLOR:7:0]
---- 164,166 ----
+--- 188,190 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:phyllite][DISPLAY_COLOR:0:7:1][TILE:29]
   [BASIC_COLOR:7:0]
 ***************
-*** 171,173 ****
+*** 196,198 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:schist][DISPLAY_COLOR:6:7:0][TILE:'`']
   [METAMORPHIC]
---- 171,173 ----
+--- 196,198 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:schist][DISPLAY_COLOR:6:7:0][TILE:29]
   [METAMORPHIC]
 ***************
-*** 177,179 ****
+*** 203,205 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:gneiss][DISPLAY_COLOR:7:7:1][TILE:'=']
   [BASIC_COLOR:7:0]
---- 177,179 ----
+--- 203,205 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:gneiss][DISPLAY_COLOR:7:7:1][TILE:29]
   [BASIC_COLOR:7:0]
 ***************
-*** 184,186 ****
+*** 211,213 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:marble][DISPLAY_COLOR:7:7:1][TILE:178][REACTION_CLASS:FLUX]
   [METAMORPHIC]
---- 184,186 ----
+--- 211,213 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:marble][DISPLAY_COLOR:7:7:1][TILE:199][REACTION_CLASS:FLUX]
   [METAMORPHIC]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/inorganic_stone_mineral.txt dfg/raw/objects/inorganic_stone_mineral.txt
-*** df_linux/raw/objects/inorganic_stone_mineral.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/inorganic_stone_mineral.txt	2012-03-28 16:06:18.638000198 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/inorganic_stone_mineral.txt dfg_temp//raw/objects/inorganic_stone_mineral.txt
+*** df_linux_temp//raw/objects/inorganic_stone_mineral.txt	2012-05-22 21:34:24.898000197 +0200
+--- dfg_temp//raw/objects/inorganic_stone_mineral.txt	2012-05-22 21:34:37.393000197 +0200
 ***************
-*** 18,20 ****
+*** 22,24 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:limonite][DISPLAY_COLOR:6:7:1][TILE:156]
   [ENVIRONMENT:SEDIMENTARY:VEIN:100]
---- 18,20 ----
+--- 22,24 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:limonite][DISPLAY_COLOR:6:7:1][TILE:255]
   [ENVIRONMENT:SEDIMENTARY:VEIN:100]
 ***************
-*** 28,30 ****
+*** 32,34 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:garnierite][DISPLAY_COLOR:2:7:1][TILE:156]
   [ENVIRONMENT_SPEC:GABBRO:VEIN:100]
---- 28,30 ----
+--- 32,34 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:garnierite][DISPLAY_COLOR:2:7:1][TILE:255]
   [ENVIRONMENT_SPEC:GABBRO:VEIN:100]
 ***************
-*** 47,49 ****
+*** 52,54 ****
   [DISPLAY_COLOR:6:7:1]
 ! [TILE:156]
   [MATERIAL_VALUE:30]
---- 47,49 ----
+--- 52,54 ----
   [DISPLAY_COLOR:6:7:1]
 ! [TILE:255]
   [MATERIAL_VALUE:30]
 ***************
-*** 87,89 ****
+*** 92,94 ****
   [DISPLAY_COLOR:7:7:1]
 ! [TILE:156]
   [MATERIAL_VALUE:10]
---- 87,89 ----
+--- 92,94 ----
   [DISPLAY_COLOR:7:7:1]
 ! [TILE:255]
   [MATERIAL_VALUE:10]
 ***************
-*** 127,129 ****
+*** 132,134 ****
   [DISPLAY_COLOR:6:7:0]
 ! [TILE:156]
   [MATERIAL_VALUE:2]
---- 127,129 ----
+--- 132,134 ----
   [DISPLAY_COLOR:6:7:0]
 ! [TILE:255]
   [MATERIAL_VALUE:2]
 ***************
-*** 159,161 ****
+*** 164,166 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:malachite][DISPLAY_COLOR:2:7:0][TILE:156]
   [ENVIRONMENT_SPEC:LIMESTONE:VEIN:100]
---- 159,161 ----
+--- 164,166 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:malachite][DISPLAY_COLOR:2:7:0][TILE:255]
   [ENVIRONMENT_SPEC:LIMESTONE:VEIN:100]
 ***************
-*** 170,172 ****
+*** 176,178 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:galena][DISPLAY_COLOR:7:7:1][TILE:156]
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:VEIN:100]
---- 170,172 ----
+--- 176,178 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:galena][DISPLAY_COLOR:7:7:1][TILE:255]
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:VEIN:100]
 ***************
-*** 186,188 ****
+*** 192,194 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:sphalerite][DISPLAY_COLOR:0:7:1][TILE:156]
   [ENVIRONMENT:METAMORPHIC:VEIN:100]
---- 186,188 ----
+--- 192,194 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:sphalerite][DISPLAY_COLOR:0:7:1][TILE:255]
   [ENVIRONMENT:METAMORPHIC:VEIN:100]
 ***************
-*** 197,199 ****
+*** 204,206 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:cassiterite][DISPLAY_COLOR:6:7:0][TILE:156]
   [ENVIRONMENT:ALLUVIAL:CLUSTER_SMALL:100]
---- 197,199 ----
+--- 204,206 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:cassiterite][DISPLAY_COLOR:6:7:0][TILE:255]
   [ENVIRONMENT:ALLUVIAL:CLUSTER_SMALL:100]
 ***************
-*** 209,211 ****
+*** 217,219 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:bituminous coal][DISPLAY_COLOR:0:7:1][TILE:15]
   [ENVIRONMENT:SEDIMENTARY:VEIN:100]
---- 209,211 ----
+--- 217,219 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:bituminous coal][DISPLAY_COLOR:0:7:1][TILE:171]
   [ENVIRONMENT:SEDIMENTARY:VEIN:100]
 ***************
-*** 221,223 ****
+*** 229,231 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:lignite][DISPLAY_COLOR:0:7:1][TILE:'*']
   [ENVIRONMENT:SEDIMENTARY:VEIN:100]
---- 221,223 ----
+--- 229,231 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:lignite][DISPLAY_COLOR:0:7:1][TILE:171]
   [ENVIRONMENT:SEDIMENTARY:VEIN:100]
 ***************
-*** 242,244 ****
+*** 250,252 ****
   [DISPLAY_COLOR:7:7:1]
 ! [TILE:156]
   [MATERIAL_VALUE:40]
---- 242,244 ----
+--- 250,252 ----
   [DISPLAY_COLOR:7:7:1]
 ! [TILE:255]
   [MATERIAL_VALUE:40]
 ***************
-*** 275,277 ****
+*** 283,285 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:cinnabar][DISPLAY_COLOR:4:7:1][TILE:156]
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:VEIN:100]
---- 275,277 ----
+--- 283,285 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:cinnabar][DISPLAY_COLOR:4:7:1][TILE:182]
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:VEIN:100]
 ***************
-*** 285,287 ****
+*** 294,296 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:cobaltite][DISPLAY_COLOR:1:7:1][TILE:156]
   [ENVIRONMENT:IGNEOUS_ALL:VEIN:100]
---- 285,287 ----
+--- 294,296 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:cobaltite][DISPLAY_COLOR:1:7:1][TILE:182]
   [ENVIRONMENT:IGNEOUS_ALL:VEIN:100]
 ***************
-*** 294,296 ****
+*** 303,305 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:tetrahedrite][DISPLAY_COLOR:0:7:1][TILE:156]
   [ENVIRONMENT:ALL_STONE:VEIN:100]
---- 294,296 ----
+--- 303,305 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:tetrahedrite][DISPLAY_COLOR:0:7:1][TILE:255]
   [ENVIRONMENT:ALL_STONE:VEIN:100]
 ***************
-*** 305,307 ****
+*** 315,317 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:horn silver][DISPLAY_COLOR:7:7:1][TILE:156]
   [ENVIRONMENT_SPEC:NATIVE_SILVER:CLUSTER_SMALL:100]
---- 305,307 ----
+--- 315,317 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:horn silver][DISPLAY_COLOR:7:7:1][TILE:255]
   [ENVIRONMENT_SPEC:NATIVE_SILVER:CLUSTER_SMALL:100]
 ***************
-*** 317,319 ****
+*** 327,329 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:gypsum][DISPLAY_COLOR:6:7:1][TILE:'#']
   [ENVIRONMENT:SEDIMENTARY:CLUSTER:100]
---- 317,319 ----
+--- 327,329 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:gypsum][DISPLAY_COLOR:6:7:1][TILE:182]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER:100]
 ***************
-*** 326,328 ****
+*** 336,338 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:talc][DISPLAY_COLOR:7:7:1][TILE:'|']
   [ENVIRONMENT_SPEC:DOLOMITE:CLUSTER:100]
---- 326,328 ----
+--- 336,338 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:talc][DISPLAY_COLOR:7:7:1][TILE:182]
   [ENVIRONMENT_SPEC:DOLOMITE:CLUSTER:100]
 ***************
-*** 334,336 ****
+*** 344,346 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:jet][DISPLAY_COLOR:0:7:1][TILE:176]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER:100]
---- 334,336 ----
+--- 344,346 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:jet][DISPLAY_COLOR:0:7:1][TILE:182]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER:100]
 ***************
-*** 340,342 ****
+*** 351,353 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:puddingstone][DISPLAY_COLOR:6:7:0][TILE:233]
   [ENVIRONMENT_SPEC:CONGLOMERATE:CLUSTER:100][AQUIFER]
---- 340,342 ----
+--- 351,353 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:puddingstone][DISPLAY_COLOR:6:7:0][TILE:182]
   [ENVIRONMENT_SPEC:CONGLOMERATE:CLUSTER:100][AQUIFER]
 ***************
-*** 346,348 ****
+*** 358,360 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:petrified wood][DISPLAY_COLOR:4:7:1][TILE:'%']
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 346,348 ----
+--- 358,360 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:petrified wood][DISPLAY_COLOR:4:7:1][TILE:182]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 354,356 ****
+*** 367,369 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:graphite][DISPLAY_COLOR:0:7:1][TILE:'o']
   comes from metamorphism of sedimentary rocks
---- 354,356 ----
+--- 367,369 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:graphite][DISPLAY_COLOR:0:7:1][TILE:182]
   comes from metamorphism of sedimentary rocks
 ***************
-*** 370,372 ****
+*** 383,385 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:brimstone][DISPLAY_COLOR:6:7:1][TILE:'%']
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:CLUSTER_SMALL:100]
---- 370,372 ----
+--- 383,385 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:brimstone][DISPLAY_COLOR:6:7:1][TILE:182]
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:CLUSTER_SMALL:100]
 ***************
-*** 381,383 ****
+*** 394,396 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:kimberlite][DISPLAY_COLOR:1:7:0][TILE:'%']
   [ENVIRONMENT_SPEC:GABBRO:VEIN:100]
---- 381,383 ----
+--- 394,396 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:kimberlite][DISPLAY_COLOR:1:7:0][TILE:182]
   [ENVIRONMENT_SPEC:GABBRO:VEIN:100]
 ***************
-*** 388,390 ****
+*** 402,404 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:bismuthinite][DISPLAY_COLOR:7:7:1][TILE:'%']
   [BASIC_COLOR:7:0]
---- 388,390 ----
+--- 402,404 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:bismuthinite][DISPLAY_COLOR:7:7:1][TILE:255]
   [BASIC_COLOR:7:0]
 ***************
-*** 399,401 ****
+*** 414,416 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:realgar][DISPLAY_COLOR:4:7:1][TILE:'%']
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:CLUSTER_SMALL:100]
---- 399,401 ----
+--- 414,416 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:realgar][DISPLAY_COLOR:4:7:1][TILE:182]
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:CLUSTER_SMALL:100]
 ***************
-*** 408,410 ****
+*** 424,426 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:orpiment][DISPLAY_COLOR:6:7:1][TILE:'-']
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:CLUSTER_SMALL:100]
---- 408,410 ----
+--- 424,426 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:orpiment][DISPLAY_COLOR:6:7:1][TILE:182]
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:CLUSTER_SMALL:100]
 ***************
-*** 417,419 ****
+*** 434,436 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:stibnite][DISPLAY_COLOR:7:7:1][TILE:'%']
   [BASIC_COLOR:7:0]
---- 417,419 ----
+--- 434,436 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:stibnite][DISPLAY_COLOR:7:7:1][TILE:182]
   [BASIC_COLOR:7:0]
 ***************
-*** 425,427 ****
+*** 443,445 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:marcasite][DISPLAY_COLOR:7:7:1][TILE:'%']
   [ENVIRONMENT_SPEC:KAOLINITE:CLUSTER_SMALL:100]
---- 425,427 ----
+--- 443,445 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:marcasite][DISPLAY_COLOR:7:7:1][TILE:182]
   [ENVIRONMENT_SPEC:KAOLINITE:CLUSTER_SMALL:100]
 ***************
-*** 433,435 ****
+*** 452,454 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:sylvite][DISPLAY_COLOR:6:7:1][TILE:'=']
   [ENVIRONMENT_SPEC:ROCK_SALT:CLUSTER:100]
---- 433,435 ----
+--- 452,454 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:sylvite][DISPLAY_COLOR:6:7:1][TILE:182]
   [ENVIRONMENT_SPEC:ROCK_SALT:CLUSTER:100]
 ***************
-*** 441,443 ****
+*** 461,463 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:cryolite][DISPLAY_COLOR:7:7:1][TILE:'-']
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
---- 441,443 ----
+--- 461,463 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:cryolite][DISPLAY_COLOR:7:7:1][TILE:182]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 ***************
-*** 448,450 ****
+*** 469,471 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:periclase][DISPLAY_COLOR:7:7:1][TILE:',']
   [ENVIRONMENT_SPEC:MARBLE:CLUSTER_SMALL:100]
---- 448,450 ----
+--- 469,471 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:periclase][DISPLAY_COLOR:7:7:1][TILE:182]
   [ENVIRONMENT_SPEC:MARBLE:CLUSTER_SMALL:100]
 ***************
-*** 457,459 ****
+*** 479,481 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:ilmenite][DISPLAY_COLOR:0:7:1][TILE:'.']
   [ENVIRONMENT_SPEC:GABBRO:CLUSTER_SMALL:100]
---- 457,459 ----
+--- 479,481 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:ilmenite][DISPLAY_COLOR:0:7:1][TILE:182]
   [ENVIRONMENT_SPEC:GABBRO:CLUSTER_SMALL:100]
 ***************
-*** 466,468 ****
+*** 488,490 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:rutile][DISPLAY_COLOR:5:7:0][TILE:'`']
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
---- 466,468 ----
+--- 488,490 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:rutile][DISPLAY_COLOR:5:7:0][TILE:182]
   [ENVIRONMENT:METAMORPHIC:CLUSTER_SMALL:100]
 ***************
-*** 474,476 ****
+*** 497,499 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:magnetite][DISPLAY_COLOR:0:7:1][TILE:'~']
   [ENVIRONMENT:SEDIMENTARY:CLUSTER:100]
---- 474,476 ----
+--- 497,499 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:magnetite][DISPLAY_COLOR:7:8:0][TILE:156]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER:100]
 ***************
-*** 487,489 ****
+*** 510,512 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:chromite][DISPLAY_COLOR:0:7:1][TILE:'=']
   [ENVIRONMENT_SPEC:OLIVINE:VEIN:100]
---- 487,489 ----
+--- 510,512 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:chromite][DISPLAY_COLOR:0:7:1][TILE:182]
   [ENVIRONMENT_SPEC:OLIVINE:VEIN:100]
 ***************
-*** 497,499 ****
+*** 520,522 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:pyrolusite][DISPLAY_COLOR:0:7:1][TILE:'%']
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
---- 497,499 ----
+--- 520,522 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:pyrolusite][DISPLAY_COLOR:0:7:1][TILE:182]
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
 ***************
-*** 505,507 ****
+*** 529,531 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:pitchblende][DISPLAY_COLOR:5:7:0][TILE:'*']
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
---- 505,507 ----
+--- 529,531 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:pitchblende][DISPLAY_COLOR:5:7:0][TILE:182]
   [ENVIRONMENT_SPEC:GRANITE:CLUSTER_SMALL:100]
 ***************
-*** 515,517 ****
+*** 540,542 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:bauxite][DISPLAY_COLOR:4:7:0][TILE:'+']
   [ENVIRONMENT:SEDIMENTARY:CLUSTER:100]
---- 515,517 ----
+--- 540,542 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:bauxite][DISPLAY_COLOR:4:7:0][TILE:182]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER:100]
 ***************
-*** 530,532 ****
+*** 556,558 ****
   [DISPLAY_COLOR:7:7:1]
 ! [TILE:'^']
   [MATERIAL_VALUE:40]
---- 530,532 ----
+--- 556,558 ----
   [DISPLAY_COLOR:7:7:1]
 ! [TILE:255]
   [MATERIAL_VALUE:40]
 ***************
-*** 562,564 ****
+*** 588,590 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:borax][DISPLAY_COLOR:7:7:1][TILE:'`']
   [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
---- 562,564 ----
+--- 588,590 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:borax][DISPLAY_COLOR:7:7:1][TILE:182]
   [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
 ***************
-*** 571,573 ****
+*** 598,600 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:olivine][DISPLAY_COLOR:2:7:0][TILE:'%']
   [ENVIRONMENT_SPEC:GABBRO:CLUSTER:100]
---- 571,573 ----
+--- 598,600 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:olivine][DISPLAY_COLOR:2:7:0][TILE:182]
   [ENVIRONMENT_SPEC:GABBRO:CLUSTER:100]
 ***************
-*** 578,580 ****
+*** 606,608 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:hornblende][DISPLAY_COLOR:0:7:1][TILE:'"']
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
---- 578,580 ----
+--- 606,608 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:hornblende][DISPLAY_COLOR:0:7:1][TILE:182]
   [ENVIRONMENT:IGNEOUS_ALL:CLUSTER_SMALL:100]
 ***************
-*** 586,588 ****
+*** 615,617 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:kaolinite][DISPLAY_COLOR:4:7:0][TILE:'=']
   [ENVIRONMENT:SEDIMENTARY:CLUSTER:100]
---- 586,588 ----
+--- 615,617 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:kaolinite][DISPLAY_COLOR:4:7:0][TILE:182]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER:100]
 ***************
-*** 594,596 ****
+*** 624,626 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:serpentine][DISPLAY_COLOR:2:7:0][TILE:247]
   [ENVIRONMENT_SPEC:OLIVINE:CLUSTER_SMALL:100]
---- 594,596 ----
+--- 624,626 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:serpentine][DISPLAY_COLOR:2:7:0][TILE:182]
   [ENVIRONMENT_SPEC:OLIVINE:CLUSTER_SMALL:100]
 ***************
-*** 602,604 ****
+*** 633,635 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:orthoclase][DISPLAY_COLOR:6:7:1][TILE:'%']
   [ENVIRONMENT:IGNEOUS_INTRUSIVE:CLUSTER:100]
---- 602,604 ----
+--- 633,635 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:orthoclase][DISPLAY_COLOR:6:7:1][TILE:182]
   [ENVIRONMENT:IGNEOUS_INTRUSIVE:CLUSTER:100]
 ***************
-*** 611,613 ****
+*** 643,645 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:microcline][DISPLAY_COLOR:3:7:1][TILE:'%']
   [ENVIRONMENT:ALL_STONE:CLUSTER:100]
---- 611,613 ----
+--- 643,645 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:microcline][DISPLAY_COLOR:3:7:1][TILE:182]
   [ENVIRONMENT:ALL_STONE:CLUSTER:100]
 ***************
-*** 618,620 ****
+*** 651,653 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:mica][DISPLAY_COLOR:0:7:1][TILE:'v']
   [ENVIRONMENT:METAMORPHIC:CLUSTER:100]
---- 618,620 ----
+--- 651,653 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:mica][DISPLAY_COLOR:0:7:1][TILE:182]
   [ENVIRONMENT:METAMORPHIC:CLUSTER:100]
 ***************
-*** 628,630 ****
+*** 661,663 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:calcite][DISPLAY_COLOR:7:7:1][TILE:'"']
   [REACTION_CLASS:FLUX]
---- 628,630 ----
+--- 661,663 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:calcite][DISPLAY_COLOR:7:7:1][TILE:199]
   [REACTION_CLASS:FLUX]
 ***************
-*** 639,641 ****
+*** 673,675 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:saltpeter][DISPLAY_COLOR:6:7:1][TILE:'x']
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 639,641 ----
+--- 673,675 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:saltpeter][DISPLAY_COLOR:6:7:1][TILE:182]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 648,650 ****
+*** 682,684 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:alabaster][DISPLAY_COLOR:7:7:1][TILE:'^']
   [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
---- 648,650 ----
+--- 682,684 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:alabaster][DISPLAY_COLOR:7:7:1][TILE:182]
   [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
 ***************
-*** 657,659 ****
+*** 691,693 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:selenite][DISPLAY_COLOR:7:7:1][TILE:';']
   [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
---- 657,659 ----
+--- 691,693 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:selenite][DISPLAY_COLOR:7:7:1][TILE:182]
   [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
 ***************
-*** 666,668 ****
+*** 700,702 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:satinspar][DISPLAY_COLOR:7:7:1][TILE:'-']
   [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
---- 666,668 ----
+--- 700,702 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:satinspar][DISPLAY_COLOR:7:7:1][TILE:182]
   [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
 ***************
-*** 676,678 ****
+*** 710,712 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:anhydrite][DISPLAY_COLOR:7:7:1][TILE:'v']
   [BASIC_COLOR:7:0]
---- 676,678 ----
+--- 710,712 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:anhydrite][DISPLAY_COLOR:7:7:1][TILE:182]
   [BASIC_COLOR:7:0]
 ***************
-*** 689,691 ****
+*** 724,726 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:alunite][DISPLAY_COLOR:7:7:1][TILE:'`']
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:CLUSTER:100]
---- 689,691 ----
+--- 724,726 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:alunite][DISPLAY_COLOR:7:7:1][TILE:182]
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:CLUSTER:100]
 ***************
-*** 703,705 ****
+*** 739,741 ****
   [DISPLAY_COLOR:3:7:1]
 ! [TILE:156]
   [MATERIAL_VALUE:250]
---- 703,705 ----
+--- 739,741 ----
   [DISPLAY_COLOR:3:7:1]
 ! [TILE:255]
   [MATERIAL_VALUE:250]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/item_helm.txt dfg/raw/objects/item_helm.txt
-*** df_linux/raw/objects/item_helm.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/item_helm.txt	2012-03-28 16:06:18.638000198 +0200
-***************
-*** 19,21 ****
-  [LEATHER]
-- [SHAPED]
-  
---- 19,20 ----
-***************
-*** 34,36 ****
-  [STRUCTURAL_ELASTICITY_WOVEN_THREAD]
-- [SHAPED]
-  
---- 33,34 ----
-***************
-*** 72,74 ****
-  [STRUCTURAL_ELASTICITY_WOVEN_THREAD]
-- [SHAPED]
-  
---- 70,71 ----
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/item_tool.txt dfg/raw/objects/item_tool.txt
-*** df_linux/raw/objects/item_tool.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/item_tool.txt	2012-03-28 16:06:18.638000198 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/item_tool.txt dfg_temp//raw/objects/item_tool.txt
+*** df_linux_temp//raw/objects/item_tool.txt	2012-05-22 21:34:24.897000197 +0200
+--- dfg_temp//raw/objects/item_tool.txt	2012-05-22 21:34:37.393000197 +0200
 ***************
 *** 141,143 ****
   [TOOL_USE:LIQUID_CONTAINER]
@@ -2655,9 +2562,29 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/item_tool.txt df
   [TOOL_USE:FOOD_STORAGE]
 ! [TILE:147]
   [SIZE:5000]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_grasses.txt dfg/raw/objects/plant_grasses.txt
-*** df_linux/raw/objects/plant_grasses.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/plant_grasses.txt	2012-03-28 16:06:18.637000198 +0200
+***************
+*** 192,195 ****
+  [FURNITURE]
+! [TILE:254]
+! [INVERTED_TILE]
+  [SIZE:40000]
+--- 192,195 ----
+  [FURNITURE]
+! [TILE:152]
+! INVERTED_TILE
+  [SIZE:40000]
+***************
+*** 205,207 ****
+  [FURNITURE]
+! [TILE:153]
+  [SIZE:30000]
+--- 205,207 ----
+  [FURNITURE]
+! [TILE:152]
+  [SIZE:30000]
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/plant_grasses.txt dfg_temp//raw/objects/plant_grasses.txt
+*** df_linux_temp//raw/objects/plant_grasses.txt	2012-05-22 21:34:24.897000197 +0200
+--- dfg_temp//raw/objects/plant_grasses.txt	2012-05-22 21:34:37.392000197 +0200
 ***************
 *** 503,505 ****
   	[GRASS]
@@ -2685,9 +2612,9 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_grasses.tx
   	[GRASS]
 ! 	[GRASS_TILES:231:139:231:139]
   	[GRASS_COLORS:2:0:1:2:0:1:2:0:1:6:0:0]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.txt dfg/raw/objects/plant_standard.txt
-*** df_linux/raw/objects/plant_standard.txt	2012-03-23 09:58:38.000000000 +0100
---- dfg/raw/objects/plant_standard.txt	2012-03-28 16:06:18.637000198 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/plant_standard.txt dfg_temp//raw/objects/plant_standard.txt
+*** df_linux_temp//raw/objects/plant_standard.txt	2012-05-22 21:34:24.896000197 +0200
+--- dfg_temp//raw/objects/plant_standard.txt	2012-05-22 21:34:37.392000197 +0200
 ***************
 *** 53,56 ****
   	[UNDERGROUND_DEPTH:1:3]
@@ -2845,8 +2772,19 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[PICKED_TILE:':'][PICKED_COLOR:6:0:1]
   	[WET][GOOD][BIOME:NOT_FREEZING]
 ***************
-*** 729,731 ****
+*** 721,724 ****
+  
+- Uristocrat did the density values.
+- 
+  [PLANT:MANGROVE]
+--- 721,722 ----
+***************
+*** 731,737 ****
   		[PREFIX:NONE]
+! 	 	Based on black mangrove (Avicennia spp.)
+! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/avicenniaeng.html
+! 	 	[SOLID_DENSITY:830]
+! 	 	[STATE_COLOR:ALL_SOLID:TAUPE_DARK]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
   	[PREFSTRING:roots]
 --- 729,731 ----
@@ -2854,8 +2792,12 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5][DEAD_TREE_TILE:142]
   	[PREFSTRING:roots]
 ***************
-*** 743,745 ****
+*** 749,755 ****
   		[PREFIX:NONE]
+! 	         Density was determined experimentally.  Contact Uristocrat for a sample if you want to verify this yourself.
+! 	         A 6g (+/- 0.1g) piece of dry Saguaro wood had a volume of approximately 14 cm^3 (+/- 1 cm^3)
+! 	 	[SOLID_DENSITY:430]
+! 	 	[STATE_COLOR:ALL_SOLID:ECRU]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:198]
   	[PREFSTRING:amazing arms]
 --- 743,745 ----
@@ -2863,8 +2805,13 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:133][DEAD_TREE_TILE:142]
   	[PREFSTRING:amazing arms]
 ***************
-*** 756,758 ****
+*** 766,773 ****
   		[PREFIX:NONE]
+! 	 	Based on the Red Pine (Pinus resinosa):
+! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/SoftwoodNA/htmlDocs/pinusresinosa.html
+! 	 	I checked many pines, but couldn't find any with a density as high as 5.6.
+! 	 	[STATE_COLOR:ALL_SOLID:BEIGE]
+! 	 	[SOLID_DENSITY:510]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:24]
   	[PREFSTRING:cones]
 --- 756,758 ----
@@ -2872,8 +2819,18 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:134][DEAD_TREE_TILE:142]
   	[PREFSTRING:cones]
 ***************
-*** 774,776 ****
+*** 779,780 ****
+--- 764,766 ----
+  	[SAPLING]
++ 	[SOLID_DENSITY:560]
+  
+***************
+*** 788,794 ****
   		[PREFIX:NONE]
+! 	 	Based on White-Cedar (Tabebuia spp.)
+! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/TropAmerican/htmlDocs_tropamerican/Tabebuiasppwhitecedar.html
+! 	 	[STATE_COLOR:ALL_SOLID:OLIVE]
+! 	 	[SOLID_DENSITY:570]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:23]
   	[PREFSTRING:majesty]
 --- 774,776 ----
@@ -2881,8 +2838,18 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:134][DEAD_TREE_TILE:142]
   	[PREFSTRING:majesty]
 ***************
-*** 791,793 ****
+*** 798,799 ****
+--- 780,782 ----
+  	[SAPLING]
++ 	[SOLID_DENSITY:380]
+  
+***************
+*** 808,814 ****
   		[PREFIX:NONE]
+! 	 	Based on Quercus spp.
+! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/TropAmerican/htmlDocs_tropamerican/Quercusspp.html
+! 	 	[STATE_COLOR:ALL_SOLID:AUBURN]
+! 		[SOLID_DENSITY:700]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:6]
   	[PREFSTRING:acorns]
 --- 791,793 ----
@@ -2890,8 +2857,18 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:130][DEAD_TREE_TILE:142]
   	[PREFSTRING:acorns]
 ***************
-*** 807,809 ****
+*** 818,819 ****
+--- 797,799 ----
+  	[SAPLING]
++ 	[SOLID_DENSITY:700]
+  
+***************
+*** 827,833 ****
   		[PREFIX:NONE]
+! 	 	Based on African Mahogany (Khaya grandifoliola and K. senegalensis)
+! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/African/htmlDocs_africa/khayagrandi.html
+! 	 	[STATE_COLOR:ALL_SOLID:MAHOGANY]
+! 		[SOLID_DENSITY:600]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:6]
   	[PREFSTRING:loose inflorescences]
 --- 807,809 ----
@@ -2899,8 +2876,18 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:130][DEAD_TREE_TILE:142]
   	[PREFSTRING:loose inflorescences]
 ***************
-*** 822,824 ****
+*** 836,837 ****
+--- 812,814 ----
+  	[SAPLING]
++ 	[SOLID_DENSITY:600]
+  
+***************
+*** 845,851 ****
   		[PREFIX:NONE]
+! 	 	Based on Acacia mollissima syn. A. mearnsii
+! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/SEAsian_Oceanic/htmlDocs_SEAsian/acaciamollissima.html
+! 	 	[SOLID_DENSITY:600]
+! 	 	[STATE_COLOR:ALL_SOLID:PEACH]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
   	[PREFSTRING:thorns]
 --- 822,824 ----
@@ -2908,8 +2895,12 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5][DEAD_TREE_TILE:142]
   	[PREFSTRING:thorns]
 ***************
-*** 839,841 ****
+*** 866,872 ****
   		[PREFIX:NONE]
+! 	 	Based on Cieba pentandra:
+! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/African/htmlDocs_africa/Ceibapentandra.html
+! 	 	[SOLID_DENSITY:260]
+! 	 	[STATE_COLOR:ALL_SOLID:TAN]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
   	[PREFSTRING:buttresses]
 --- 839,841 ----
@@ -2917,8 +2908,12 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:132][DEAD_TREE_TILE:142]
   	[PREFSTRING:buttresses]
 ***************
-*** 854,856 ****
+*** 885,891 ****
   		[PREFIX:NONE]
+! 	 	Based on Acer spp.
+! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/acersp1.html
+! 	 	[SOLID_DENSITY:540]	Used a more average value.  Softer maples are around 400, harder ones around 600.
+! 	 	[STATE_COLOR:ALL_SOLID:RUST]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
   	[PREFSTRING:autumn coloration]
 --- 854,856 ----
@@ -2926,8 +2921,18 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5][DEAD_TREE_TILE:142]
   	[PREFSTRING:autumn coloration]
 ***************
-*** 872,874 ****
+*** 897,898 ****
+--- 862,864 ----
+  	[SAPLING]
++ 	[SOLID_DENSITY:755]
+  
+***************
+*** 906,912 ****
   		[PREFIX:NONE]
+! 	 	Based on black willow (Salix nigra)
+! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/salixn1.html
+! 	 	[SOLID_DENSITY:390]
+! 	 	[STATE_COLOR:ALL_SOLID:TAN]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:244]
   	[PREFSTRING:sad appearance]
 --- 872,874 ----
@@ -2935,7 +2940,13 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:244][DEAD_TREE_TILE:142]
   	[PREFSTRING:sad appearance]
 ***************
-*** 1088,1090 ****
+*** 924,925 ****
+--- 886,888 ----
+  	[SAPLING]
++ 	[SOLID_DENSITY:420]
+  
+***************
+*** 1125,1127 ****
   		[DISPLAY_COLOR:7:0:1]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
   	[TREE_COLOR:7:0:1]
@@ -2944,7 +2955,7 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5][DEAD_TREE_TILE:142]
   	[TREE_COLOR:7:0:1]
 ***************
-*** 1105,1107 ****
+*** 1142,1144 ****
   		[PREFIX:NONE]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:20]
   	[PREFSTRING:magnificence]
@@ -2953,8 +2964,12 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:130][DEAD_TREE_TILE:142]
   	[PREFSTRING:magnificence]
 ***************
-*** 1121,1123 ****
+*** 1158,1164 ****
   		[PREFIX:NONE]
+! 	 	Based on Western Larch (Larix occidentalis)
+! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/SoftwoodNA/htmlDocs/larixocciden.html
+! 	 	[STATE_COLOR:ALL_SOLID:LIGHT_BROWN]
+! 	 	[SOLID_DENSITY:590]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:24]
   	[PREFSTRING:cones]
 --- 1121,1123 ----
@@ -2962,8 +2977,18 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:134][DEAD_TREE_TILE:142]
   	[PREFSTRING:cones]
 ***************
-*** 1139,1141 ****
+*** 1169,1170 ****
+--- 1128,1130 ----
+  	[SAPLING]
++ 	[SOLID_DENSITY:590]
+  
+***************
+*** 1179,1185 ****
   		[PREFIX:NONE]
+! 	 	Based on American Chestnut (Castanea dentata)
+! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/CASTAN.html
+! 	 	[SOLID_DENSITY:430]
+! 	 	[STATE_COLOR:ALL_SOLID:DARK_CHESTNUT]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:6]
   	[PREFSTRING:smelly catkins]
 --- 1139,1141 ----
@@ -2971,8 +2996,17 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:130][DEAD_TREE_TILE:142]
   	[PREFSTRING:smelly catkins]
 ***************
-*** 1158,1160 ****
+*** 1191,1192 ****
+--- 1147,1149 ----
+  	[SAPLING]
++ 	[SOLID_DENSITY:500]
+  
+***************
+*** 1201,1206 ****
   		[PREFIX:NONE]
+! 	 	Based on Red Alder (Alnus rubra)
+! 		[SOLID_DENSITY:410]
+! 	 	[STATE_COLOR:ALL_SOLID:TAN]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
   	[PREFSTRING:catkins]
 --- 1158,1160 ----
@@ -2980,8 +3014,18 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5][DEAD_TREE_TILE:142]
   	[PREFSTRING:catkins]
 ***************
-*** 1175,1177 ****
+*** 1210,1211 ****
+--- 1164,1166 ----
+  	[SAPLING]
++ 	[SOLID_DENSITY:410]
+  
+***************
+*** 1220,1226 ****
   		[PREFIX:NONE]
+! 	 	Based on American Birch (Betula spp.)
+! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/betula1.html
+! 	 	[SOLID_DENSITY:650]
+! 	 	[STATE_COLOR:ALL_SOLID:BURNT_UMBER]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
   	[PREFSTRING:catkins]
 --- 1175,1177 ----
@@ -2989,8 +3033,18 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5][DEAD_TREE_TILE:142]
   	[PREFSTRING:catkins]
 ***************
-*** 1193,1195 ****
+*** 1231,1232 ****
+--- 1182,1184 ----
+  	[SAPLING]
++ 	[SOLID_DENSITY:670]
+  
+***************
+*** 1241,1247 ****
   		[PREFIX:NONE]
+! 	 	Based on Fraxinus spp.
+! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/fraxinus.html
+! 	 	[SOLID_DENSITY:600]
+! 	 	[STATE_COLOR:ALL_SOLID:PALE_BROWN]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:6]
   	[PREFSTRING:flying keys]
 --- 1193,1195 ----
@@ -2998,8 +3052,18 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:130][DEAD_TREE_TILE:142]
   	[PREFSTRING:flying keys]
 ***************
-*** 1209,1211 ****
+*** 1251,1252 ****
+--- 1199,1201 ----
+  	[SAPLING]
++ 	[SOLID_DENSITY:620]
+  
+***************
+*** 1260,1266 ****
   		[PREFIX:NONE]
+! 	 	Based on Aleurites moluccana 
+! 	 	http://www.thewoodexplorer.com/maindata/we71.html
+! 	 	[SOLID_DENSITY:140]
+! 	 	[STATE_COLOR:ALL_SOLID:OCHRE]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
   	[PREFSTRING:nuts]
 --- 1209,1211 ----
@@ -3007,8 +3071,12 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:132][DEAD_TREE_TILE:142]
   	[PREFSTRING:nuts]
 ***************
-*** 1223,1225 ****
+*** 1278,1284 ****
   		[PREFIX:NONE]
+! 	 	Based on Mangifera spp.
+! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/SEAsian_Oceanic/htmlDocs_SEAsian/mangifera_spp.html
+! 	 	[SOLID_DENSITY:520]
+! 	 	[STATE_COLOR:ALL_SOLID:BURNT_SIENNA]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
   	[PREFSTRING:sweet-smelling flowers]
 --- 1223,1225 ----
@@ -3016,8 +3084,12 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:132][DEAD_TREE_TILE:142]
   	[PREFSTRING:sweet-smelling flowers]
 ***************
-*** 1237,1239 ****
+*** 1296,1302 ****
   		[PREFIX:NONE]
+! 	 	Based on Hevea brasiliensis
+! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/TropAmerican/html_files/heveab1new.html
+! 	 	[SOLID_DENSITY:490]
+! 	 	[STATE_COLOR:ALL_SOLID:FLAX]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
   	[PREFSTRING:branch shedding]
 --- 1237,1239 ----
@@ -3025,8 +3097,12 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:132][DEAD_TREE_TILE:142]
   	[PREFSTRING:branch shedding]
 ***************
-*** 1251,1253 ****
+*** 1314,1320 ****
   		[PREFIX:NONE]
+! 	 	Based on Theobroma cacao
+! 	 	http://acta.inpa.gov.br/fasciculos/30-4/PDF/v30n4a06.pdf
+! 	 	[STATE_COLOR:ALL_SOLID:CHOCOLATE]  A delicious mix of irony and realism.
+! 	 	[SOLID_DENSITY:430]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
   	[PREFSTRING:flowers]
 --- 1251,1253 ----
@@ -3034,8 +3110,12 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/plant_standard.t
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:132][DEAD_TREE_TILE:142]
   	[PREFSTRING:flowers]
 ***************
-*** 1265,1267 ****
+*** 1332,1338 ****
   		[PREFIX:NONE]
+! 	 	Based on Red Palm (Cocos nucifera)
+! 	 	http://www.wood-database.com/lumber-identification/monocots/red-palm/
+! 	 	[STATE_COLOR:ALL_SOLID:TAUPE_DARK]
+! 	 	[SOLID_DENSITY:680]
 ! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
   	[PREFSTRING:leaves]
 --- 1265,1267 ----
