@@ -17,5 +17,8 @@ else
         echo "now fixing the characters in language files."
 	export LANG=C
 	find ./raw/objects -name 'language*' -exec ./apply-charpatch.sh {} \;
+	echo "disabling true type..."
+	sed -i 's,TRUETYPE:16,TRUETYPE:NO,' data/init/init.txt
+
 	echo "done!"
 fi
