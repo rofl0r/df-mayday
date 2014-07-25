@@ -1,20 +1,6 @@
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//data/init/announcements.txt dfg_temp//data/init/announcements.txt
-*** df_linux_temp//data/init/announcements.txt	2012-05-22 21:34:24.905000197 +0200
---- dfg_temp//data/init/announcements.txt	2012-05-22 21:34:37.413000197 +0200
-***************
-*** 61,64 ****
-  [MIGRANT_ARRIVAL:A_D:D_D:P:R]
-! [DIG_CANCEL_WARM:A_D:D_D:P:R]
-! [DIG_CANCEL_DAMP:A_D:D_D:P:R]
-  [AMBUSH_DEFENDER:A_D:D_D:P:R]
---- 61,64 ----
-  [MIGRANT_ARRIVAL:A_D:D_D:P:R]
-! [DIG_CANCEL_WARM:A_D:D_D:R]
-! [DIG_CANCEL_DAMP:A_D:D_D:R]
-  [AMBUSH_DEFENDER:A_D:D_D:P:R]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//data/init/colors.txt dfg_temp//data/init/colors.txt
-*** df_linux_temp//data/init/colors.txt	2012-05-22 21:34:24.905000197 +0200
---- dfg_temp//data/init/colors.txt	2012-05-22 21:34:37.412000197 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_4004/data/init/colors.txt dfg_4004/data/init/colors.txt
+*** df_linux_4004/data/init/colors.txt	Sun Jul 20 20:18:35 2014
+--- dfg_4004/data/init/colors.txt	Sat Jul 26 00:17:53 2014
 ***************
 *** 5,38 ****
   [BLACK_B:0]
@@ -129,9 +115,9 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//data/init/colors.txt d
 ! [WHITE_G:210]
 ! [WHITE_B:190]
 \ No newline at end of file
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//data/init/d_init.txt dfg_temp//data/init/d_init.txt
-*** df_linux_temp//data/init/d_init.txt	2012-05-22 21:34:24.905000197 +0200
---- dfg_temp//data/init/d_init.txt	2012-05-22 21:34:37.412000197 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_4004/data/init/d_init.txt dfg_4004/data/init/d_init.txt
+*** df_linux_4004/data/init/d_init.txt	Sun Jul 20 20:18:35 2014
+--- dfg_4004/data/init/d_init.txt	Sat Jul 26 00:17:53 2014
 ***************
 *** 71,73 ****
   
@@ -151,518 +137,79 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//data/init/d_init.txt d
 ! [PILLAR_TILE:245]
   
 ***************
-*** 83,99 ****
-  
-! [TRACK_N:208I]
-! [TRACK_S:210I]
-! [TRACK_E:198I]
-! [TRACK_W:181I]
-! [TRACK_NS:186I]
-! [TRACK_NE:200I]
-! [TRACK_NW:188I]
-! [TRACK_SE:201I]
-! [TRACK_SW:187I]
-! [TRACK_EW:205I]
-! [TRACK_NSE:204I]
-! [TRACK_NSW:185I]
-! [TRACK_NEW:202I]
-! [TRACK_SEW:203I]
-! [TRACK_NSEW:206I]
-  [TRACK_RAMP_N:30I]
---- 83,99 ----
-  
-! [TRACK_N:208]
-! [TRACK_S:210]
-! [TRACK_E:198]
-! [TRACK_W:181]
-! [TRACK_NS:179I]
-! [TRACK_NE:192I]
-! [TRACK_NW:217I]
-! [TRACK_SE:218I]
-! [TRACK_SW:191I]
-! [TRACK_EW:196I]
-! [TRACK_NSE:195I]
-! [TRACK_NSW:180I]
-! [TRACK_NEW:193I]
-! [TRACK_SEW:194I]
-! [TRACK_NSEW:158I]
-  [TRACK_RAMP_N:30I]
-***************
-*** 124,126 ****
-  
-! [POPULATION_CAP:200]
-  
---- 124,126 ----
-  
-! [POPULATION_CAP:150]
-  
-***************
-*** 136,138 ****
+*** 248,250 ****
   
 ! [ENGRAVINGS_START_OBSCURED:NO]
   
---- 136,138 ----
+--- 248,250 ----
   
 ! [ENGRAVINGS_START_OBSCURED:YES]
   
-Only in dfg_temp//data/init: embark_profiles.txt
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//data/init/init.txt dfg_temp//data/init/init.txt
-*** df_linux_temp//data/init/init.txt	2012-05-22 21:34:24.905000197 +0200
---- dfg_temp//data/init/init.txt	2012-05-22 21:34:37.412000197 +0200
+Only in dfg_4004/data/init: embark_profiles.txt
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_4004/data/init/init.txt dfg_4004/data/init/init.txt
+*** df_linux_4004/data/init/init.txt	Sun Jul 20 20:18:35 2014
+--- dfg_4004/data/init/init.txt	Sat Jul 26 00:17:53 2014
 ***************
-*** 47,52 ****
+*** 29,31 ****
+  [WINDOWEDY:25]
+! [FONT:curses_640x300.png]
+  
+--- 29,31 ----
+  [WINDOWEDY:25]
+! [FONT:mayday.png]
+  
+***************
+*** 38,40 ****
+  [FULLSCREENY:0]
+! [FULLFONT:curses_800x600.png]
+  
+--- 38,40 ----
+  [FULLSCREENY:0]
+! [FULLFONT:mayday.png]
+  
+***************
+*** 47,55 ****
   
 ! [GRAPHICS:NO]
   [GRAPHICS_WINDOWEDX:0]
   [GRAPHICS_WINDOWEDY:0]
 ! [GRAPHICS_FONT:curses_square_16x16.png]
   [GRAPHICS_FULLSCREENX:0]
---- 47,52 ----
+  [GRAPHICS_FULLSCREENY:0]
+! [GRAPHICS_FULLFONT:curses_square_16x16.png]
+  [GRAPHICS_BLACK_SPACE:YES]
+--- 47,55 ----
   
 ! [GRAPHICS:YES]
   [GRAPHICS_WINDOWEDX:0]
   [GRAPHICS_WINDOWEDY:0]
 ! [GRAPHICS_FONT:mayday.png]
   [GRAPHICS_FULLSCREENX:0]
+  [GRAPHICS_FULLSCREENY:0]
+! [GRAPHICS_FULLFONT:mayday.png]
+  [GRAPHICS_BLACK_SPACE:YES]
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_4004/data/init/interface.txt dfg_4004/data/init/interface.txt
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_4004/raw/objects/inorganic_stone_gem.txt dfg_4004/raw/objects/inorganic_stone_gem.txt
+*** df_linux_4004/raw/objects/inorganic_stone_gem.txt	Sun Jul 20 20:18:35 2014
+--- dfg_4004/raw/objects/inorganic_stone_gem.txt	Sat Jul 26 00:17:53 2014
 ***************
-*** 76,78 ****
-  
-! [TRUETYPE:24]
-  
---- 76,78 ----
-  
-! [TRUETYPE:16]
-  
-Only in dfg_temp//data/init/macros: designate bedrooms.mak
-Only in dfg_temp//data/init/macros: dig bedrooms NE.mak
-Only in dfg_temp//data/init/macros: dig bedrooms NW.mak
-Only in dfg_temp//data/init/macros: dump 5 on list.mak
-Only in dfg_temp//data/init/macros: mark for trade.mak
-Only in dfg_temp//data/init/macros: place beds.mak
-Only in dfg_temp//data/init/macros: place cabinets.mak
-Only in dfg_temp//data/init/macros: stocks bars shortcut.mak
-Only in dfg_temp//data/init/macros: Trade many.mak
-Only in dfg_temp//data/init/macros: undump cages.mak
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/creature_annelids.txt dfg_temp//raw/objects/creature_annelids.txt
-*** df_linux_temp//raw/objects/creature_annelids.txt	2012-05-22 21:34:24.897000197 +0200
---- dfg_temp//raw/objects/creature_annelids.txt	2012-05-22 21:34:37.395000197 +0200
+*** 15,17 ****
+  FELDSPAR	Moonstone, Sunstone
+! TOURMALINES	Tourmalines, schorl
+  ZIRCONS		Zircons
+--- 15,17 ----
+  FELDSPAR	Moonstone, Sunstone
+! TOURMALINES	Tourmalines
+  ZIRCONS		Zircons
 ***************
-*** 8,10 ****
-  	[CASTE_NAME:worm:worms:worm]
-! 	[CREATURE_TILE:'~'][COLOR:7:0:0]
-  	[PETVALUE:10]
---- 8,10 ----
-  	[CASTE_NAME:worm:worms:worm]
-! 	[CREATURE_TILE:138][COLOR:7:0:0]
-  	[PETVALUE:10]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/creature_birds.txt dfg_temp//raw/objects/creature_birds.txt
-*** df_linux_temp//raw/objects/creature_birds.txt	2012-05-22 21:34:24.894000197 +0200
---- dfg_temp//raw/objects/creature_birds.txt	2012-05-22 21:34:37.395000197 +0200
-***************
-*** 9,11 ****
-  	[GENERAL_CHILD_NAME:blue jay hatchling:blue jay hatchlings]
-! 	[CREATURE_TILE:249][COLOR:1:0:1]
-  	[PETVALUE:30][NATURAL][PET]
---- 9,11 ----
-  	[GENERAL_CHILD_NAME:blue jay hatchling:blue jay hatchlings]
-! 	[CREATURE_TILE:151][COLOR:1:0:1]
-  	[PETVALUE:30][NATURAL][PET]
-***************
-*** 106,108 ****
-  	[GENERAL_CHILD_NAME:cardinal hatchling:cardinal hatchlings]
-! 	[CREATURE_TILE:249][COLOR:4:0:1]
-  	[PETVALUE:30][NATURAL][PET]
---- 106,108 ----
-  	[GENERAL_CHILD_NAME:cardinal hatchling:cardinal hatchlings]
-! 	[CREATURE_TILE:151][COLOR:4:0:1]
-  	[PETVALUE:30][NATURAL][PET]
-***************
-*** 202,204 ****
-  	[GENERAL_CHILD_NAME:grackle hatchling:grackle hatchlings]
-! 	[CREATURE_TILE:249][COLOR:0:0:1]
-  	[PETVALUE:30][NATURAL][PET]
---- 202,204 ----
-  	[GENERAL_CHILD_NAME:grackle hatchling:grackle hatchlings]
-! 	[CREATURE_TILE:151][COLOR:0:0:1]
-  	[PETVALUE:30][NATURAL][PET]
-***************
-*** 295,297 ****
-  	[GENERAL_CHILD_NAME:oriole hatchling:oriole hatchlings]
-! 	[CREATURE_TILE:249][COLOR:6:0:1]
-  	[PETVALUE:30][NATURAL][PET]
---- 295,297 ----
-  	[GENERAL_CHILD_NAME:oriole hatchling:oriole hatchlings]
-! 	[CREATURE_TILE:151][COLOR:6:0:1]
-  	[PETVALUE:30][NATURAL][PET]
-***************
-*** 387,389 ****
-  	[GENERAL_CHILD_NAME:red-winged blackbird hatchling:red-winged blackbird hatchlings]
-! 	[CREATURE_TILE:249][COLOR:0:0:1]
-  	[PETVALUE:30][NATURAL][PET]
---- 387,389 ----
-  	[GENERAL_CHILD_NAME:red-winged blackbird hatchling:red-winged blackbird hatchlings]
-! 	[CREATURE_TILE:151][COLOR:0:0:1]
-  	[PETVALUE:30][NATURAL][PET]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/creature_other.txt dfg_temp//raw/objects/creature_other.txt
-*** df_linux_temp//raw/objects/creature_other.txt	2012-05-22 21:34:24.895000197 +0200
---- dfg_temp//raw/objects/creature_other.txt	2012-05-22 21:34:37.394000197 +0200
-***************
-*** 370,372 ****
-  	[CASTE_NAME:knuckle worm:knuckle worms:knuckle worm]
-! 	[CREATURE_TILE:'~'][COLOR:0:0:1]
-  	[PETVALUE:100]
---- 370,372 ----
-  	[CASTE_NAME:knuckle worm:knuckle worms:knuckle worm]
-! 	[CREATURE_TILE:138][COLOR:0:0:1]
-  	[PETVALUE:100]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/creature_small_ocean.txt dfg_temp//raw/objects/creature_small_ocean.txt
-*** df_linux_temp//raw/objects/creature_small_ocean.txt	2012-05-22 21:34:24.894000197 +0200
---- dfg_temp//raw/objects/creature_small_ocean.txt	2012-05-22 21:34:37.394000197 +0200
-***************
-*** 8,10 ****
-  	[CASTE_NAME:mussel:mussels:mussel]
-! 	[CREATURE_TILE:'m'][COLOR:7:0:1]
-  	[PETVALUE:10]
---- 8,10 ----
-  	[CASTE_NAME:mussel:mussels:mussel]
-! 	[CREATURE_TILE:144][COLOR:7:0:1]
-  	[PETVALUE:10]
-***************
-*** 60,62 ****
-  	[CASTE_NAME:oyster:oysters:oyster]
-! 	[CREATURE_TILE:'o'][COLOR:7:0:1]
-  	[PETVALUE:10]
---- 60,62 ----
-  	[CASTE_NAME:oyster:oysters:oyster]
-! 	[CREATURE_TILE:144][COLOR:7:0:1]
-  	[PETVALUE:10]
-***************
-*** 110,112 ****
-  	[CASTE_NAME:salmon:salmon:salmon]
-! 	[CREATURE_TILE:224][COLOR:4:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 110,112 ----
-  	[CASTE_NAME:salmon:salmon:salmon]
-! 	[CREATURE_TILE:136][COLOR:4:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 181,183 ****
-  	[CASTE_NAME:clownfish:clownfish:clownfish]
-! 	[CREATURE_TILE:224][COLOR:4:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 181,183 ----
-  	[CASTE_NAME:clownfish:clownfish:clownfish]
-! 	[CREATURE_TILE:136][COLOR:4:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 248,250 ****
-  	[CASTE_NAME:hagfish:hagfish:hagfish]
-! 	[CREATURE_TILE:'~'][COLOR:6:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 248,250 ----
-  	[CASTE_NAME:hagfish:hagfish:hagfish]
-! 	[CREATURE_TILE:136][COLOR:6:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 314,316 ****
-  	[CASTE_NAME:brook lamprey:brook lampreys:brook lamprey]
-! 	[CREATURE_TILE:'~'][COLOR:3:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 314,316 ----
-  	[CASTE_NAME:brook lamprey:brook lampreys:brook lamprey]
-! 	[CREATURE_TILE:136][COLOR:3:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 381,383 ****
-  	[CASTE_NAME:bat ray:bat rays:bat ray]
-! 	[CREATURE_TILE:149][COLOR:7:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 381,383 ----
-  	[CASTE_NAME:bat ray:bat rays:bat ray]
-! 	[CREATURE_TILE:136][COLOR:7:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 447,449 ****
-  	[CASTE_NAME:thornback ray:thornback rays:thornback ray]
-! 	[CREATURE_TILE:149][COLOR:6:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 447,449 ----
-  	[CASTE_NAME:thornback ray:thornback rays:thornback ray]
-! 	[CREATURE_TILE:136][COLOR:6:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 512,514 ****
-  	[CASTE_NAME:spotted ratfish:spotted ratfish:spotted ratfish]
-! 	[CREATURE_TILE:224][COLOR:6:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 512,514 ----
-  	[CASTE_NAME:spotted ratfish:spotted ratfish:spotted ratfish]
-! 	[CREATURE_TILE:136][COLOR:6:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 579,581 ****
-  	[CASTE_NAME:herring:herrings:herring]
-! 	[CREATURE_TILE:224][COLOR:3:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 579,581 ----
-  	[CASTE_NAME:herring:herrings:herring]
-! 	[CREATURE_TILE:136][COLOR:3:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 648,650 ****
-  	[CASTE_NAME:shad:shads:shad]
-! 	[CREATURE_TILE:224][COLOR:3:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 648,650 ----
-  	[CASTE_NAME:shad:shads:shad]
-! 	[CREATURE_TILE:136][COLOR:3:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 720,722 ****
-  	[CASTE_NAME:anchovy:anchovies:anchovy]
-! 	[CREATURE_TILE:224][COLOR:7:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 720,722 ----
-  	[CASTE_NAME:anchovy:anchovies:anchovy]
-! 	[CREATURE_TILE:136][COLOR:7:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 788,790 ****
-  	[CASTE_NAME:steelhead trout:steelhead trout:steelhead trout]
-! 	[CREATURE_TILE:224][COLOR:3:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 788,790 ----
-  	[CASTE_NAME:steelhead trout:steelhead trout:steelhead trout]
-! 	[CREATURE_TILE:136][COLOR:3:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 859,861 ****
-  	[CASTE_NAME:hake:hake:hake]
-! 	[CREATURE_TILE:224][COLOR:7:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 859,861 ----
-  	[CASTE_NAME:hake:hake:hake]
-! 	[CREATURE_TILE:136][COLOR:7:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 928,930 ****
-  	[CASTE_NAME:seahorse:seahorses:seahorse]
-! 	[CREATURE_TILE:224][COLOR:2:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 928,930 ----
-  	[CASTE_NAME:seahorse:seahorses:seahorse]
-! 	[CREATURE_TILE:136][COLOR:2:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 991,993 ****
-  	[CASTE_NAME:glasseye:glasseye:glasseye]
-! 	[CREATURE_TILE:224][COLOR:4:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 991,993 ----
-  	[CASTE_NAME:glasseye:glasseye:glasseye]
-! 	[CREATURE_TILE:136][COLOR:4:0:1]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 1059,1061 ****
-  	[CASTE_NAME:white-spotted puffer:white-spotted puffers:white-spotted puffer]
-! 	[CREATURE_TILE:224][COLOR:7:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 1059,1061 ----
-  	[CASTE_NAME:white-spotted puffer:white-spotted puffers:white-spotted puffer]
-! 	[CREATURE_TILE:136][COLOR:7:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 1121,1123 ****
-  	[CASTE_NAME:sole:sole:sole]
-! 	[CREATURE_TILE:224][COLOR:6:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 1121,1123 ----
-  	[CASTE_NAME:sole:sole:sole]
-! 	[CREATURE_TILE:136][COLOR:6:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 1189,1191 ****
-  	[CASTE_NAME:flounder:flounders:flounder]
-! 	[CREATURE_TILE:224][COLOR:6:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 1189,1191 ----
-  	[CASTE_NAME:flounder:flounders:flounder]
-! 	[CREATURE_TILE:136][COLOR:6:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 1256,1258 ****
-  	[CASTE_NAME:mackerel:mackerel:mackerel]
-! 	[CREATURE_TILE:224][COLOR:7:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
---- 1256,1258 ----
-  	[CASTE_NAME:mackerel:mackerel:mackerel]
-! 	[CREATURE_TILE:136][COLOR:7:0:0]
-  	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
-***************
-*** 1325,1327 ****
-  	[CASTE_NAME:sea nettle jellyfish:sea nettle jellyfish:sea nettle jellyfish]
-! 	[CREATURE_TILE:234][COLOR:6:0:0]
-  	[PETVALUE:10]
---- 1325,1327 ----
-  	[CASTE_NAME:sea nettle jellyfish:sea nettle jellyfish:sea nettle jellyfish]
-! 	[CREATURE_TILE:136][COLOR:6:0:0]
-  	[PETVALUE:10]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/creature_small_riverlake.txt dfg_temp//raw/objects/creature_small_riverlake.txt
-*** df_linux_temp//raw/objects/creature_small_riverlake.txt	2012-05-22 21:34:24.897000197 +0200
---- dfg_temp//raw/objects/creature_small_riverlake.txt	2012-05-22 21:34:37.394000197 +0200
-***************
-*** 8,10 ****
-  	[CASTE_NAME:lungfish:lungfish:lungfish]
-! 	[CREATURE_TILE:224][COLOR:6:0:0]
-  	[VERMIN_GROUNDER]
---- 8,10 ----
-  	[CASTE_NAME:lungfish:lungfish:lungfish]
-! 	[CREATURE_TILE:136][COLOR:6:0:0]
-  	[VERMIN_GROUNDER]
-***************
-*** 84,86 ****
-  	[CASTE_NAME:clown loach:clown loaches:clown loach]
-! 	[CREATURE_TILE:224][COLOR:6:0:1]
-  	[VERMIN_GROUNDER]
---- 84,86 ----
-  	[CASTE_NAME:clown loach:clown loaches:clown loach]
-! 	[CREATURE_TILE:136][COLOR:6:0:1]
-  	[VERMIN_GROUNDER]
-***************
-*** 152,154 ****
-  	[CASTE_NAME:brown bullhead:brown bullheads:brown bullhead]
-! 	[CREATURE_TILE:224][COLOR:6:0:0]
-  	[VERMIN_GROUNDER][VERMIN_FISH]
---- 152,154 ----
-  	[CASTE_NAME:brown bullhead:brown bullheads:brown bullhead]
-! 	[CREATURE_TILE:136][COLOR:6:0:0]
-  	[VERMIN_GROUNDER][VERMIN_FISH]
-***************
-*** 220,222 ****
-  	[CASTE_NAME:yellow bullhead:yellow bullheads:yellow bullhead]
-! 	[CREATURE_TILE:224][COLOR:6:0:0]
-  	[VERMIN_GROUNDER][VERMIN_FISH]
---- 220,222 ----
-  	[CASTE_NAME:yellow bullhead:yellow bullheads:yellow bullhead]
-! 	[CREATURE_TILE:136][COLOR:6:0:0]
-  	[VERMIN_GROUNDER][VERMIN_FISH]
-***************
-*** 288,290 ****
-  	[CASTE_NAME:black bullhead:black bullheads:black bullhead]
-! 	[CREATURE_TILE:224][COLOR:6:0:0]
-  	[VERMIN_GROUNDER][VERMIN_FISH]
---- 288,290 ----
-  	[CASTE_NAME:black bullhead:black bullheads:black bullhead]
-! 	[CREATURE_TILE:136][COLOR:6:0:0]
-  	[VERMIN_GROUNDER][VERMIN_FISH]
-***************
-*** 356,358 ****
-  	[CASTE_NAME:banded knifefish:banded knifefish:banded knifefish]
-! 	[CREATURE_TILE:224][COLOR:6:0:0]
-  	[VERMIN_GROUNDER]
---- 356,358 ----
-  	[CASTE_NAME:banded knifefish:banded knifefish:banded knifefish]
-! 	[CREATURE_TILE:136][COLOR:6:0:0]
-  	[VERMIN_GROUNDER]
-***************
-*** 424,426 ****
-  	[CASTE_NAME:char:char:char]
-! 	[CREATURE_TILE:224][COLOR:0:0:1]
-  	[VERMIN_GROUNDER][VERMIN_FISH]
---- 424,426 ----
-  	[CASTE_NAME:char:char:char]
-! 	[CREATURE_TILE:136][COLOR:0:0:1]
-  	[VERMIN_GROUNDER][VERMIN_FISH]
-***************
-*** 492,494 ****
-  	[CASTE_NAME:rainbow trout:rainbow trout:rainbow trout]
-! 	[CREATURE_TILE:224][COLOR:2:0:1]
-  	[VERMIN_GROUNDER][VERMIN_FISH]
---- 492,494 ----
-  	[CASTE_NAME:rainbow trout:rainbow trout:rainbow trout]
-! 	[CREATURE_TILE:136][COLOR:2:0:1]
-  	[VERMIN_GROUNDER][VERMIN_FISH]
-***************
-*** 560,562 ****
-  	[CASTE_NAME:sailfin molly:sailfin mollies:sailfin molly]
-! 	[CREATURE_TILE:224][COLOR:2:0:0]
-  	[VERMIN_GROUNDER]
---- 560,562 ----
-  	[CASTE_NAME:sailfin molly:sailfin mollies:sailfin molly]
-! 	[CREATURE_TILE:136][COLOR:2:0:0]
-  	[VERMIN_GROUNDER]
-***************
-*** 632,634 ****
-  	[CASTE_NAME:guppy:guppies:guppy]
-! 	[CREATURE_TILE:224][COLOR:1:0:1]
-  	[VERMIN_GROUNDER]
---- 632,634 ----
-  	[CASTE_NAME:guppy:guppies:guppy]
-! 	[CREATURE_TILE:136][COLOR:1:0:1]
-  	[VERMIN_GROUNDER]
-***************
-*** 704,706 ****
-  	[CASTE_NAME:perch:perch:perch]
-! 	[CREATURE_TILE:224][COLOR:7:0:1]
-  	[VERMIN_GROUNDER][VERMIN_FISH]
---- 704,706 ----
-  	[CASTE_NAME:perch:perch:perch]
-! 	[CREATURE_TILE:136][COLOR:7:0:1]
-  	[VERMIN_GROUNDER][VERMIN_FISH]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/creature_standard.txt dfg_temp//raw/objects/creature_standard.txt
-*** df_linux_temp//raw/objects/creature_standard.txt	2012-05-22 21:34:24.897000197 +0200
---- dfg_temp//raw/objects/creature_standard.txt	2012-05-22 21:34:37.394000197 +0200
-***************
-*** 404,406 ****
-  	[CASTE_NAME:human:humans:human]
-! 	[CREATURE_TILE:'U'][COLOR:3:0:0]
-  	[CREATURE_SOLDIER_TILE:154]
---- 404,406 ----
-  	[CASTE_NAME:human:humans:human]
-! 	[CREATURE_TILE:'@'][COLOR:3:0:0]
-  	[CREATURE_SOLDIER_TILE:154]
-***************
-*** 645,647 ****
-  	[CASTE_NAME:elf:elves:elven]
-! 	[CREATURE_TILE:'e'][COLOR:3:0:0]
-  	[CREATURE_SOLDIER_TILE:137]
---- 645,647 ----
-  	[CASTE_NAME:elf:elves:elven]
-! 	[CREATURE_TILE:141][COLOR:3:0:0]
-  	[CREATURE_SOLDIER_TILE:137]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/creature_subterranean.txt dfg_temp//raw/objects/creature_subterranean.txt
-*** df_linux_temp//raw/objects/creature_subterranean.txt	2012-05-22 21:34:24.895000197 +0200
---- dfg_temp//raw/objects/creature_subterranean.txt	2012-05-22 21:34:37.394000197 +0200
-***************
-*** 1087,1089 ****
-  	[CASTE_NAME:cave fish:cave fish:cave fish]
-! 	[CREATURE_TILE:224][COLOR:7:0:1]
-  	[VERMIN_FISH][VERMIN_GROUNDER][FISHITEM][IMMOBILE_LAND][VERMIN_NOTRAP]
---- 1087,1089 ----
-  	[CASTE_NAME:cave fish:cave fish:cave fish]
-! 	[CREATURE_TILE:136][COLOR:7:0:1]
-  	[VERMIN_FISH][VERMIN_GROUNDER][FISHITEM][IMMOBILE_LAND][VERMIN_NOTRAP]
-***************
-*** 1230,1232 ****
-  	[CASTE_NAME:fire snake:fire snakes:fire snake]
-! 	[CREATURE_TILE:249][COLOR:6:0:1]
-  	[PETVALUE:10]
---- 1230,1232 ----
-  	[CASTE_NAME:fire snake:fire snakes:fire snake]
-! 	[CREATURE_TILE:138][COLOR:6:0:1]
-  	[PETVALUE:10]
-***************
-*** 1270,1272 ****
-  	[CASTE_NAME:olm:olms:olm]
-! 	[CREATURE_TILE:249][COLOR:7:0:1]
-  	[PETVALUE:10]
---- 1270,1272 ----
-  	[CASTE_NAME:olm:olms:olm]
-! 	[CREATURE_TILE:138][COLOR:7:0:1]
-  	[PETVALUE:10]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/inorganic_stone_gem.txt dfg_temp//raw/objects/inorganic_stone_gem.txt
-*** df_linux_temp//raw/objects/inorganic_stone_gem.txt	2012-05-22 21:34:24.897000197 +0200
---- dfg_temp//raw/objects/inorganic_stone_gem.txt	2012-05-22 21:34:37.393000197 +0200
+*** 24,26 ****
+  DIAMONDS	Diamonds
+! OTHER		Variscite, chrysocolla, tiger iron, pyrite, peridot, tanzanite, kunzite
+   
+--- 24,26 ----
+  DIAMONDS	Diamonds
+! OTHER		Schorl, variscite, chrysocolla, tiger iron, pyrite, peridot, tanzanite, kunzite
+   
 ***************
 *** 33,35 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -1806,9 +1353,9 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/inorganic_
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [TILE:10][IS_GEM:star ruby:star rubies:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:1][MATERIAL_VALUE:60]
   [ENVIRONMENT_SPEC:RUBY:CLUSTER_ONE:1]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/inorganic_stone_layer.txt dfg_temp//raw/objects/inorganic_stone_layer.txt
-*** df_linux_temp//raw/objects/inorganic_stone_layer.txt	2012-05-22 21:34:24.897000197 +0200
---- dfg_temp//raw/objects/inorganic_stone_layer.txt	2012-05-22 21:34:37.393000197 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_4004/raw/objects/inorganic_stone_layer.txt dfg_4004/raw/objects/inorganic_stone_layer.txt
+*** df_linux_4004/raw/objects/inorganic_stone_layer.txt	Sun Jul 20 20:18:35 2014
+--- dfg_4004/raw/objects/inorganic_stone_layer.txt	Sat Jul 26 00:17:53 2014
 ***************
 *** 16,18 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -2034,18 +1581,9 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/inorganic_
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:marble][DISPLAY_COLOR:7:7:1][TILE:199][REACTION_CLASS:FLUX]
   [METAMORPHIC]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/inorganic_stone_mineral.txt dfg_temp//raw/objects/inorganic_stone_mineral.txt
-*** df_linux_temp//raw/objects/inorganic_stone_mineral.txt	2012-05-22 21:34:24.898000197 +0200
---- dfg_temp//raw/objects/inorganic_stone_mineral.txt	2012-05-22 21:34:37.393000197 +0200
-***************
-*** 22,24 ****
-  [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
-! [STATE_NAME_ADJ:ALL_SOLID:limonite][DISPLAY_COLOR:6:7:1][TILE:156]
-  [ENVIRONMENT:SEDIMENTARY:VEIN:100]
---- 22,24 ----
-  [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
-! [STATE_NAME_ADJ:ALL_SOLID:limonite][DISPLAY_COLOR:6:7:1][TILE:255]
-  [ENVIRONMENT:SEDIMENTARY:VEIN:100]
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_4004/raw/objects/inorganic_stone_mineral.txt dfg_4004/raw/objects/inorganic_stone_mineral.txt
+*** df_linux_4004/raw/objects/inorganic_stone_mineral.txt	Sun Jul 20 20:18:35 2014
+--- dfg_4004/raw/objects/inorganic_stone_mineral.txt	Sat Jul 26 00:17:53 2014
 ***************
 *** 32,34 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -2541,584 +2079,78 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/inorganic_
   [DISPLAY_COLOR:3:7:1]
 ! [TILE:255]
   [MATERIAL_VALUE:250]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/item_tool.txt dfg_temp//raw/objects/item_tool.txt
-*** df_linux_temp//raw/objects/item_tool.txt	2012-05-22 21:34:24.897000197 +0200
---- dfg_temp//raw/objects/item_tool.txt	2012-05-22 21:34:37.393000197 +0200
+diff -r -C1 '--exclude=language*' -w -B -E df_linux_4004/raw/objects/plant_grasses.txt dfg_4004/raw/objects/plant_grasses.txt
+*** df_linux_4004/raw/objects/plant_grasses.txt	Sun Jul 20 20:18:35 2014
+--- dfg_4004/raw/objects/plant_grasses.txt	Sat Jul 26 00:17:53 2014
 ***************
-*** 141,143 ****
-  [TOOL_USE:LIQUID_CONTAINER]
-! [TILE:229]
-  [SIZE:300]
---- 141,143 ----
-  [TOOL_USE:LIQUID_CONTAINER]
-! [TILE:147]
-  [SIZE:300]
+*** 247,249 ****
+  		[GROWTH_TIMING:250000:260000]
+! 		[GROWTH_PRINT:5:5:7:0:1:250000:260000:1]
+  
+--- 247,249 ----
+  		[GROWTH_TIMING:250000:260000]
+! 		[GROWTH_PRINT:170:170:7:0:1:250000:260000:1]
+  
 ***************
-*** 152,154 ****
-  [TOOL_USE:FOOD_STORAGE]
-! [TILE:232]
-  [SIZE:5000]
---- 152,154 ----
-  [TOOL_USE:FOOD_STORAGE]
-! [TILE:147]
-  [SIZE:5000]
+*** 271,273 ****
+  		[GROWTH_TIMING:250000:260000]
+! 		[GROWTH_PRINT:5:5:6:0:1:250000:260000:1]
+  
+--- 271,273 ----
+  		[GROWTH_TIMING:250000:260000]
+! 		[GROWTH_PRINT:170:170:6:0:1:250000:260000:1]
+  
 ***************
-*** 192,195 ****
-  [FURNITURE]
-! [TILE:254]
-! [INVERTED_TILE]
-  [SIZE:40000]
---- 192,195 ----
-  [FURNITURE]
-! [TILE:152]
-! INVERTED_TILE
-  [SIZE:40000]
-***************
-*** 205,207 ****
-  [FURNITURE]
-! [TILE:153]
-  [SIZE:30000]
---- 205,207 ----
-  [FURNITURE]
-! [TILE:152]
-  [SIZE:30000]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/plant_grasses.txt dfg_temp//raw/objects/plant_grasses.txt
-*** df_linux_temp//raw/objects/plant_grasses.txt	2012-05-22 21:34:24.897000197 +0200
---- dfg_temp//raw/objects/plant_grasses.txt	2012-05-22 21:34:37.392000197 +0200
-***************
-*** 503,505 ****
-  	[GRASS]
-! 	[GRASS_TILES:231:159:231:159]
-  	[GRASS_COLORS:2:0:1:2:0:1:2:0:1:6:0:0]
---- 503,505 ----
-  	[GRASS]
-! 	[GRASS_TILES:231:139:231:139]
-  	[GRASS_COLORS:2:0:1:2:0:1:2:0:1:6:0:0]
-***************
-*** 514,516 ****
-  	[GRASS]
-! 	[GRASS_TILES:231:159:231:159]
-  	[GRASS_COLORS:2:0:1:2:0:1:2:0:1:6:0:0]
---- 514,516 ----
-  	[GRASS]
-! 	[GRASS_TILES:231:139:231:139]
-  	[GRASS_COLORS:2:0:1:2:0:1:2:0:1:6:0:0]
-***************
-*** 526,528 ****
-  	[GRASS]
-! 	[GRASS_TILES:231:159:231:159]
-  	[GRASS_COLORS:2:0:1:2:0:1:2:0:1:6:0:0]
---- 526,528 ----
-  	[GRASS]
-! 	[GRASS_TILES:231:139:231:139]
-  	[GRASS_COLORS:2:0:1:2:0:1:2:0:1:6:0:0]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_temp//raw/objects/plant_standard.txt dfg_temp//raw/objects/plant_standard.txt
-*** df_linux_temp//raw/objects/plant_standard.txt	2012-05-22 21:34:24.896000197 +0200
---- dfg_temp//raw/objects/plant_standard.txt	2012-05-22 21:34:37.392000197 +0200
-***************
-*** 53,56 ****
-  	[UNDERGROUND_DEPTH:1:3]
-! 	[SHRUB_TILE:58]
-! 	[DEAD_SHRUB_TILE:58]
-  	[SHRUB_COLOR:5:0:0]
---- 53,56 ----
-  	[UNDERGROUND_DEPTH:1:3]
-! 	[SHRUB_TILE:':']
-! 	[DEAD_SHRUB_TILE:':']
-  	[SHRUB_COLOR:5:0:0]
-***************
-*** 90,93 ****
-  	[UNDERGROUND_DEPTH:1:3]
-! 	[SHRUB_TILE:58]
-! 	[DEAD_SHRUB_TILE:58]
-  	[SHRUB_COLOR:7:0:0]
---- 90,93 ----
-  	[UNDERGROUND_DEPTH:1:3]
-! 	[SHRUB_TILE:':']
-! 	[DEAD_SHRUB_TILE:':']
-  	[SHRUB_COLOR:7:0:0]
-***************
-*** 134,137 ****
-  	[UNDERGROUND_DEPTH:1:3]
-! 	[SHRUB_TILE:58]
-! 	[DEAD_SHRUB_TILE:58]
-  	[SHRUB_COLOR:7:0:1]
---- 134,137 ----
-  	[UNDERGROUND_DEPTH:1:3]
-! 	[SHRUB_TILE:':']
-! 	[DEAD_SHRUB_TILE:':']
-  	[SHRUB_COLOR:7:0:1]
-***************
-*** 145,147 ****
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:232][PICKED_COLOR:4:0:1]
-  	[GROWDUR:500][VALUE:2]
---- 145,147 ----
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:129][PICKED_COLOR:4:0:1]
-  	[GROWDUR:500][VALUE:2]
-***************
-*** 190,193 ****
-  	[UNDERGROUND_DEPTH:1:3]
-! 	[SHRUB_TILE:58]
-! 	[DEAD_SHRUB_TILE:58]
-  	[SHRUB_COLOR:4:0:1]
---- 190,193 ----
-  	[UNDERGROUND_DEPTH:1:3]
-! 	[SHRUB_TILE:':']
-! 	[DEAD_SHRUB_TILE:':']
-  	[SHRUB_COLOR:4:0:1]
-***************
-*** 201,203 ****
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:5][PICKED_COLOR:7:0:0]
-  	[GROWDUR:500][VALUE:2]
---- 201,203 ----
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:'"'][PICKED_COLOR:7:0:0]
-  	[GROWDUR:500][VALUE:2]
-***************
-*** 240,243 ****
-  	[UNDERGROUND_DEPTH:1:3]
-! 	[SHRUB_TILE:58]
-! 	[DEAD_SHRUB_TILE:58]
-  	[SHRUB_COLOR:7:0:0]
---- 240,243 ----
-  	[UNDERGROUND_DEPTH:1:3]
-! 	[SHRUB_TILE:':']
-! 	[DEAD_SHRUB_TILE:':']
-  	[SHRUB_COLOR:7:0:0]
-***************
-*** 278,280 ****
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:232][PICKED_COLOR:6:0:0]
-  	[DRY][BIOME:ANY_WETLAND]
---- 278,280 ----
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:129][PICKED_COLOR:6:0:0]
-  	[DRY][BIOME:ANY_WETLAND]
-***************
-*** 301,303 ****
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:232][PICKED_COLOR:0:0:1]
-  	[WET][BIOME:ANY_WETLAND]
---- 301,303 ----
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:129][PICKED_COLOR:0:0:1]
-  	[WET][BIOME:ANY_WETLAND]
-***************
-*** 336,338 ****
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:58][PICKED_COLOR:2:0:0]
-  	[DRY][BIOME:NOT_FREEZING]
---- 336,338 ----
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:':'][PICKED_COLOR:2:0:0]
-  	[DRY][BIOME:NOT_FREEZING]
+*** 343,345 ****
+  		[GROWTH_TIMING:150000:250000]
+! 		[GROWTH_PRINT:5:5:7:0:1:150000:250000:1]
+  
+--- 343,345 ----
+  		[GROWTH_TIMING:150000:250000]
+! 		[GROWTH_PRINT:170:170:7:0:1:150000:250000:1]
+  
 ***************
 *** 366,368 ****
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:58][PICKED_COLOR:4:0:0]
-  	[DRY][BIOME:NOT_FREEZING]
+  		[GROWTH_TIMING:110000:130000]
+! 		[GROWTH_PRINT:5:5:6:0:0:110000:130000:1]
+  
 --- 366,368 ----
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:':'][PICKED_COLOR:4:0:0]
-  	[DRY][BIOME:NOT_FREEZING]
-***************
-*** 433,435 ****
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:152][PICKED_COLOR:2:0:1]
-  	[DRY][BIOME:GRASSLAND_TEMPERATE]
---- 433,435 ----
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:131][PICKED_COLOR:2:0:1]
-  	[DRY][BIOME:GRASSLAND_TEMPERATE]
-***************
-*** 488,490 ****
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:58][PICKED_COLOR:7:0:0]
-  	[WET][BIOME:NOT_FREEZING]
---- 488,490 ----
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:':'][PICKED_COLOR:7:0:0]
-  	[WET][BIOME:NOT_FREEZING]
-***************
-*** 515,517 ****
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:159][PICKED_COLOR:2:0:0]
-  	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
---- 515,517 ----
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:139][PICKED_COLOR:2:0:0]
-  	[USE_MATERIAL_TEMPLATE:DRINK:PLANT_ALCOHOL_TEMPLATE]
-***************
-*** 567,570 ****
-  	[UNDERGROUND_DEPTH:1:3]
-! 	[SHRUB_TILE:58]
-! 	[DEAD_SHRUB_TILE:58]
-  	[SHRUB_COLOR:1:0:1]
---- 567,570 ----
-  	[UNDERGROUND_DEPTH:1:3]
-! 	[SHRUB_TILE:':']
-! 	[DEAD_SHRUB_TILE:':']
-  	[SHRUB_COLOR:1:0:1]
-***************
-*** 664,666 ****
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:58][PICKED_COLOR:6:0:1]
-  	[WET][GOOD][BIOME:NOT_FREEZING]
---- 664,666 ----
-  	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
-! 	[PICKED_TILE:':'][PICKED_COLOR:6:0:1]
-  	[WET][GOOD][BIOME:NOT_FREEZING]
-***************
-*** 721,724 ****
-  
-- Uristocrat did the density values.
-- 
-  [PLANT:MANGROVE]
---- 721,722 ----
-***************
-*** 731,737 ****
-  		[PREFIX:NONE]
-! 	 	Based on black mangrove (Avicennia spp.)
-! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/avicenniaeng.html
-! 	 	[SOLID_DENSITY:830]
-! 	 	[STATE_COLOR:ALL_SOLID:TAUPE_DARK]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
-  	[PREFSTRING:roots]
---- 729,731 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5][DEAD_TREE_TILE:142]
-  	[PREFSTRING:roots]
-***************
-*** 749,755 ****
-  		[PREFIX:NONE]
-! 	         Density was determined experimentally.  Contact Uristocrat for a sample if you want to verify this yourself.
-! 	         A 6g (+/- 0.1g) piece of dry Saguaro wood had a volume of approximately 14 cm^3 (+/- 1 cm^3)
-! 	 	[SOLID_DENSITY:430]
-! 	 	[STATE_COLOR:ALL_SOLID:ECRU]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:198]
-  	[PREFSTRING:amazing arms]
---- 743,745 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:133][DEAD_TREE_TILE:142]
-  	[PREFSTRING:amazing arms]
-***************
-*** 766,773 ****
-  		[PREFIX:NONE]
-! 	 	Based on the Red Pine (Pinus resinosa):
-! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/SoftwoodNA/htmlDocs/pinusresinosa.html
-! 	 	I checked many pines, but couldn't find any with a density as high as 5.6.
-! 	 	[STATE_COLOR:ALL_SOLID:BEIGE]
-! 	 	[SOLID_DENSITY:510]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:24]
-  	[PREFSTRING:cones]
---- 756,758 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:134][DEAD_TREE_TILE:142]
-  	[PREFSTRING:cones]
-***************
-*** 779,780 ****
---- 764,766 ----
-  	[SAPLING]
-+ 	[SOLID_DENSITY:560]
+  		[GROWTH_TIMING:110000:130000]
+! 		[GROWTH_PRINT:170:170:6:0:0:110000:130000:1]
   
 ***************
-*** 788,794 ****
-  		[PREFIX:NONE]
-! 	 	Based on White-Cedar (Tabebuia spp.)
-! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/TropAmerican/htmlDocs_tropamerican/Tabebuiasppwhitecedar.html
-! 	 	[STATE_COLOR:ALL_SOLID:OLIVE]
-! 	 	[SOLID_DENSITY:570]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:23]
-  	[PREFSTRING:majesty]
---- 774,776 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:134][DEAD_TREE_TILE:142]
-  	[PREFSTRING:majesty]
-***************
-*** 798,799 ****
---- 780,782 ----
-  	[SAPLING]
-+ 	[SOLID_DENSITY:380]
+*** 388,390 ****
+  		[GROWTH_DENSITY:1]
+! 		[GROWTH_PRINT:5:5:5:0:0:150000:250000:1]
+  
+--- 388,390 ----
+  		[GROWTH_DENSITY:1]
+! 		[GROWTH_PRINT:170:170:5:0:0:150000:250000:1]
   
 ***************
-*** 808,814 ****
-  		[PREFIX:NONE]
-! 	 	Based on Quercus spp.
-! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/TropAmerican/htmlDocs_tropamerican/Quercusspp.html
-! 	 	[STATE_COLOR:ALL_SOLID:AUBURN]
-! 		[SOLID_DENSITY:700]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:6]
-  	[PREFSTRING:acorns]
---- 791,793 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:130][DEAD_TREE_TILE:142]
-  	[PREFSTRING:acorns]
-***************
-*** 818,819 ****
---- 797,799 ----
-  	[SAPLING]
-+ 	[SOLID_DENSITY:700]
+*** 444,446 ****
+  		[GROWTH_DENSITY:1]
+! 		[GROWTH_PRINT:5:5:7:0:1:75000:100000:1]
+  
+--- 444,446 ----
+  		[GROWTH_DENSITY:1]
+! 		[GROWTH_PRINT:170:170:7:0:1:75000:100000:1]
   
 ***************
-*** 827,833 ****
-  		[PREFIX:NONE]
-! 	 	Based on African Mahogany (Khaya grandifoliola and K. senegalensis)
-! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/African/htmlDocs_africa/khayagrandi.html
-! 	 	[STATE_COLOR:ALL_SOLID:MAHOGANY]
-! 		[SOLID_DENSITY:600]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:6]
-  	[PREFSTRING:loose inflorescences]
---- 807,809 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:130][DEAD_TREE_TILE:142]
-  	[PREFSTRING:loose inflorescences]
-***************
-*** 836,837 ****
---- 812,814 ----
-  	[SAPLING]
-+ 	[SOLID_DENSITY:600]
+*** 475,477 ****
+  		[GROWTH_DENSITY:1]
+! 		[GROWTH_PRINT:5:5:7:0:1:75000:100000:1]
+  
+--- 475,477 ----
+  		[GROWTH_DENSITY:1]
+! 		[GROWTH_PRINT:170:170:7:0:1:75000:100000:1]
   
 ***************
-*** 845,851 ****
-  		[PREFIX:NONE]
-! 	 	Based on Acacia mollissima syn. A. mearnsii
-! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/SEAsian_Oceanic/htmlDocs_SEAsian/acaciamollissima.html
-! 	 	[SOLID_DENSITY:600]
-! 	 	[STATE_COLOR:ALL_SOLID:PEACH]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
-  	[PREFSTRING:thorns]
---- 822,824 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5][DEAD_TREE_TILE:142]
-  	[PREFSTRING:thorns]
-***************
-*** 866,872 ****
-  		[PREFIX:NONE]
-! 	 	Based on Cieba pentandra:
-! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/African/htmlDocs_africa/Ceibapentandra.html
-! 	 	[SOLID_DENSITY:260]
-! 	 	[STATE_COLOR:ALL_SOLID:TAN]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
-  	[PREFSTRING:buttresses]
---- 839,841 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:132][DEAD_TREE_TILE:142]
-  	[PREFSTRING:buttresses]
-***************
-*** 885,891 ****
-  		[PREFIX:NONE]
-! 	 	Based on Acer spp.
-! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/acersp1.html
-! 	 	[SOLID_DENSITY:540]	Used a more average value.  Softer maples are around 400, harder ones around 600.
-! 	 	[STATE_COLOR:ALL_SOLID:RUST]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
-  	[PREFSTRING:autumn coloration]
---- 854,856 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5][DEAD_TREE_TILE:142]
-  	[PREFSTRING:autumn coloration]
-***************
-*** 897,898 ****
---- 862,864 ----
-  	[SAPLING]
-+ 	[SOLID_DENSITY:755]
+*** 499,501 ****
+  		[GROWTH_DENSITY:1]
+! 		[GROWTH_PRINT:5:5:7:0:1:250000:300000:1]
   
-***************
-*** 906,912 ****
-  		[PREFIX:NONE]
-! 	 	Based on black willow (Salix nigra)
-! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/salixn1.html
-! 	 	[SOLID_DENSITY:390]
-! 	 	[STATE_COLOR:ALL_SOLID:TAN]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:244]
-  	[PREFSTRING:sad appearance]
---- 872,874 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:244][DEAD_TREE_TILE:142]
-  	[PREFSTRING:sad appearance]
-***************
-*** 924,925 ****
---- 886,888 ----
-  	[SAPLING]
-+ 	[SOLID_DENSITY:420]
+--- 499,501 ----
+  		[GROWTH_DENSITY:1]
+! 		[GROWTH_PRINT:170:170:7:0:1:250000:300000:1]
   
-***************
-*** 1125,1127 ****
-  		[DISPLAY_COLOR:7:0:1]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
-  	[TREE_COLOR:7:0:1]
---- 1088,1090 ----
-  		[DISPLAY_COLOR:7:0:1]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5][DEAD_TREE_TILE:142]
-  	[TREE_COLOR:7:0:1]
-***************
-*** 1142,1144 ****
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:20]
-  	[PREFSTRING:magnificence]
---- 1105,1107 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:130][DEAD_TREE_TILE:142]
-  	[PREFSTRING:magnificence]
-***************
-*** 1158,1164 ****
-  		[PREFIX:NONE]
-! 	 	Based on Western Larch (Larix occidentalis)
-! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/SoftwoodNA/htmlDocs/larixocciden.html
-! 	 	[STATE_COLOR:ALL_SOLID:LIGHT_BROWN]
-! 	 	[SOLID_DENSITY:590]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:24]
-  	[PREFSTRING:cones]
---- 1121,1123 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:134][DEAD_TREE_TILE:142]
-  	[PREFSTRING:cones]
-***************
-*** 1169,1170 ****
---- 1128,1130 ----
-  	[SAPLING]
-+ 	[SOLID_DENSITY:590]
-  
-***************
-*** 1179,1185 ****
-  		[PREFIX:NONE]
-! 	 	Based on American Chestnut (Castanea dentata)
-! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/CASTAN.html
-! 	 	[SOLID_DENSITY:430]
-! 	 	[STATE_COLOR:ALL_SOLID:DARK_CHESTNUT]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:6]
-  	[PREFSTRING:smelly catkins]
---- 1139,1141 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:130][DEAD_TREE_TILE:142]
-  	[PREFSTRING:smelly catkins]
-***************
-*** 1191,1192 ****
---- 1147,1149 ----
-  	[SAPLING]
-+ 	[SOLID_DENSITY:500]
-  
-***************
-*** 1201,1206 ****
-  		[PREFIX:NONE]
-! 	 	Based on Red Alder (Alnus rubra)
-! 		[SOLID_DENSITY:410]
-! 	 	[STATE_COLOR:ALL_SOLID:TAN]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
-  	[PREFSTRING:catkins]
---- 1158,1160 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5][DEAD_TREE_TILE:142]
-  	[PREFSTRING:catkins]
-***************
-*** 1210,1211 ****
---- 1164,1166 ----
-  	[SAPLING]
-+ 	[SOLID_DENSITY:410]
-  
-***************
-*** 1220,1226 ****
-  		[PREFIX:NONE]
-! 	 	Based on American Birch (Betula spp.)
-! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/betula1.html
-! 	 	[SOLID_DENSITY:650]
-! 	 	[STATE_COLOR:ALL_SOLID:BURNT_UMBER]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5]
-  	[PREFSTRING:catkins]
---- 1175,1177 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:5][DEAD_TREE_TILE:142]
-  	[PREFSTRING:catkins]
-***************
-*** 1231,1232 ****
---- 1182,1184 ----
-  	[SAPLING]
-+ 	[SOLID_DENSITY:670]
-  
-***************
-*** 1241,1247 ****
-  		[PREFIX:NONE]
-! 	 	Based on Fraxinus spp.
-! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/HardwoodNA/htmlDocs/fraxinus.html
-! 	 	[SOLID_DENSITY:600]
-! 	 	[STATE_COLOR:ALL_SOLID:PALE_BROWN]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:6]
-  	[PREFSTRING:flying keys]
---- 1193,1195 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:130][DEAD_TREE_TILE:142]
-  	[PREFSTRING:flying keys]
-***************
-*** 1251,1252 ****
---- 1199,1201 ----
-  	[SAPLING]
-+ 	[SOLID_DENSITY:620]
-  
-***************
-*** 1260,1266 ****
-  		[PREFIX:NONE]
-! 	 	Based on Aleurites moluccana 
-! 	 	http://www.thewoodexplorer.com/maindata/we71.html
-! 	 	[SOLID_DENSITY:140]
-! 	 	[STATE_COLOR:ALL_SOLID:OCHRE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
-  	[PREFSTRING:nuts]
---- 1209,1211 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:132][DEAD_TREE_TILE:142]
-  	[PREFSTRING:nuts]
-***************
-*** 1278,1284 ****
-  		[PREFIX:NONE]
-! 	 	Based on Mangifera spp.
-! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/SEAsian_Oceanic/htmlDocs_SEAsian/mangifera_spp.html
-! 	 	[SOLID_DENSITY:520]
-! 	 	[STATE_COLOR:ALL_SOLID:BURNT_SIENNA]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
-  	[PREFSTRING:sweet-smelling flowers]
---- 1223,1225 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:132][DEAD_TREE_TILE:142]
-  	[PREFSTRING:sweet-smelling flowers]
-***************
-*** 1296,1302 ****
-  		[PREFIX:NONE]
-! 	 	Based on Hevea brasiliensis
-! 	 	http://www.fpl.fs.fed.us/documnts/TechSheets/Chudnoff/TropAmerican/html_files/heveab1new.html
-! 	 	[SOLID_DENSITY:490]
-! 	 	[STATE_COLOR:ALL_SOLID:FLAX]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
-  	[PREFSTRING:branch shedding]
---- 1237,1239 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:132][DEAD_TREE_TILE:142]
-  	[PREFSTRING:branch shedding]
-***************
-*** 1314,1320 ****
-  		[PREFIX:NONE]
-! 	 	Based on Theobroma cacao
-! 	 	http://acta.inpa.gov.br/fasciculos/30-4/PDF/v30n4a06.pdf
-! 	 	[STATE_COLOR:ALL_SOLID:CHOCOLATE]  A delicious mix of irony and realism.
-! 	 	[SOLID_DENSITY:430]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
-  	[PREFSTRING:flowers]
---- 1251,1253 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:132][DEAD_TREE_TILE:142]
-  	[PREFSTRING:flowers]
-***************
-*** 1332,1338 ****
-  		[PREFIX:NONE]
-! 	 	Based on Red Palm (Cocos nucifera)
-! 	 	http://www.wood-database.com/lumber-identification/monocots/red-palm/
-! 	 	[STATE_COLOR:ALL_SOLID:TAUPE_DARK]
-! 	 	[SOLID_DENSITY:680]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:226]
-  	[PREFSTRING:leaves]
---- 1265,1267 ----
-  		[PREFIX:NONE]
-! 	[TREE:LOCAL_PLANT_MAT:WOOD][TREE_TILE:132][DEAD_TREE_TILE:142]
-  	[PREFSTRING:leaves]
