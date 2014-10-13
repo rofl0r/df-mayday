@@ -24,11 +24,11 @@ how to port your savegame
 * cd into it, delete region1/raw.
 * copy raw from DF base folder into your region1 folder - done.
 
-how to create a platform independant DFG package for redistribution
+how to create a platform independent DFG package for redistribution
 (without need to redistribute the DF binaries)
 ===================================================================
 * after you have tested the patch on the newest DF and it applied successfully,
-* unzip/tar the newest DF to some folder. it doesnt matter which platform's version it is.
+* unzip/tar the newest DF to some folder. it doesn't matter which platform's version it is.
 * run utils/clean.sh on that folder ( utils/clean.sh /path/to/DF )
 * copy everything from this repo into that folder
 * run mayday-patch.sh
