@@ -1,6 +1,6 @@
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_4005/data/init/colors.txt dfg_4005/data/init/colors.txt
-*** df_linux_4005/data/init/colors.txt	Sun Jul 27 22:26:38 2014
---- dfg_4005/data/init/colors.txt	Sun Dec 25 19:16:56 2016
+diff -r -C1 '--exclude=language*' -w -B -E df_linux/data/init/colors.txt dfg_4201_custom/data/init/colors.txt
+*** df_linux/data/init/colors.txt	Mon Nov 30 21:08:13 2015
+--- dfg_4201_custom/data/init/colors.txt	Sun Dec 25 23:05:03 2016
 ***************
 *** 5,38 ****
   [BLACK_B:0]
@@ -118,40 +118,41 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux_4005/data/init/colors.txt df
 ! [WHITE_G:210]
 ! [WHITE_B:190]
 \ No newline at end of file
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_4005/data/init/d_init.txt dfg_4005/data/init/d_init.txt
-*** df_linux_4005/data/init/d_init.txt	Sun Jul 27 22:26:38 2014
---- dfg_4005/data/init/d_init.txt	Sun Dec 25 19:43:28 2016
+diff -r -C1 '--exclude=language*' -w -B -E df_linux/data/init/d_init.txt dfg_4201_custom/data/init/d_init.txt
+*** df_linux/data/init/d_init.txt	Mon Nov 30 21:08:13 2015
+--- dfg_4201_custom/data/init/d_init.txt	Sun Dec 25 23:05:03 2016
 ***************
-*** 71,73 ****
+*** 83,85 ****
   
 ! [SKY:178:3:0:0]
   
---- 71,73 ----
+--- 83,85 ----
   
 ! [SKY:172:3:0:0]
   
 ***************
-*** 79,81 ****
+*** 91,93 ****
   
 ! [PILLAR_TILE:'O']
   
---- 79,81 ----
+--- 91,93 ----
   
 ! [PILLAR_TILE:245]
   
 ***************
-*** 249,251 ****
+*** 270,272 ****
   
 ! [ENGRAVINGS_START_OBSCURED:NO]
   
---- 249,251 ----
+--- 270,272 ----
   
 ! [ENGRAVINGS_START_OBSCURED:YES]
   
-Only in dfg_4005/data/init: embark_profiles.txt
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_4005/data/init/init.txt dfg_4005/data/init/init.txt
-*** df_linux_4005/data/init/init.txt	Sun Jul 27 22:26:38 2014
---- dfg_4005/data/init/init.txt	Sun Dec 25 19:41:51 2016
+Only in dfg_4201_custom/data/init: d_init.txt.orig
+Only in dfg_4201_custom/data/init: embark_profiles.txt
+diff -r -C1 '--exclude=language*' -w -B -E df_linux/data/init/init.txt dfg_4201_custom/data/init/init.txt
+*** df_linux/data/init/init.txt	Mon Nov 30 21:08:13 2015
+--- dfg_4201_custom/data/init/init.txt	Sun Dec 25 23:05:03 2016
 ***************
 *** 29,31 ****
   [WINDOWEDY:25]
@@ -191,9 +192,9 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux_4005/data/init/init.txt dfg_
   [GRAPHICS_FULLSCREENY:0]
 ! [GRAPHICS_FULLFONT:mayday.png]
   [GRAPHICS_BLACK_SPACE:YES]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_4005/raw/objects/inorganic_stone_layer.txt dfg_4005/raw/objects/inorganic_stone_layer.txt
-*** df_linux_4005/raw/objects/inorganic_stone_layer.txt	Sun Jul 27 22:26:39 2014
---- dfg_4005/raw/objects/inorganic_stone_layer.txt	Sun Dec 25 19:16:56 2016
+diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/inorganic_stone_layer.txt dfg_4201_custom/raw/objects/inorganic_stone_layer.txt
+*** df_linux/raw/objects/inorganic_stone_layer.txt	Mon Nov 30 21:08:13 2015
+--- dfg_4201_custom/raw/objects/inorganic_stone_layer.txt	Sun Dec 25 23:09:52 2016
 ***************
 *** 16,18 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -251,177 +252,179 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux_4005/raw/objects/inorganic_s
 ***************
 *** 61,63 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
-! [STATE_NAME_ADJ:ALL_SOLID:limestone][DISPLAY_COLOR:7:7:1][TILE:178][REACTION_CLASS:FLUX]
-  [SEDIMENTARY][SEDIMENTARY_OCEAN_DEEP]
+! [STATE_NAME_ADJ:ALL_SOLID:limestone][DISPLAY_COLOR:7:7:1][TILE:178]
+  [REACTION_CLASS:FLUX]
 --- 61,63 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
-! [STATE_NAME_ADJ:ALL_SOLID:limestone][DISPLAY_COLOR:7:7:1][TILE:199][REACTION_CLASS:FLUX]
-  [SEDIMENTARY][SEDIMENTARY_OCEAN_DEEP]
+! [STATE_NAME_ADJ:ALL_SOLID:limestone][DISPLAY_COLOR:7:7:1][TILE:199]
+  [REACTION_CLASS:FLUX]
 ***************
-*** 70,72 ****
+*** 72,74 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:conglomerate][DISPLAY_COLOR:6:7:0][TILE:236]
   [SEDIMENTARY][AQUIFER][SEDIMENTARY_OCEAN_SHALLOW]
---- 70,72 ----
+--- 72,74 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:conglomerate][DISPLAY_COLOR:6:7:0][TILE:28]
   [SEDIMENTARY][AQUIFER][SEDIMENTARY_OCEAN_SHALLOW]
 ***************
-*** 77,79 ****
+*** 79,81 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
-! [STATE_NAME_ADJ:ALL_SOLID:dolomite][DISPLAY_COLOR:7:7:1][TILE:'`'][REACTION_CLASS:FLUX]
-  [SEDIMENTARY]
---- 77,79 ----
+! [STATE_NAME_ADJ:ALL_SOLID:dolomite][DISPLAY_COLOR:7:7:1][TILE:'`']
+  [REACTION_CLASS:FLUX] not CaCO3, has Mg, maked "calcined dolomite" in calcination instead of quicklime, not sure of effective differences
+--- 79,81 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
-! [STATE_NAME_ADJ:ALL_SOLID:dolomite][DISPLAY_COLOR:7:7:1][TILE:199][REACTION_CLASS:FLUX]
-  [SEDIMENTARY]
+! [STATE_NAME_ADJ:ALL_SOLID:dolomite][DISPLAY_COLOR:7:7:1][TILE:199]
+  [REACTION_CLASS:FLUX] not CaCO3, has Mg, maked "calcined dolomite" in calcination instead of quicklime, not sure of effective differences
 ***************
-*** 87,89 ****
+*** 90,92 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:chert][DISPLAY_COLOR:6:7:0][TILE:'=']
   [SEDIMENTARY]
---- 87,89 ----
+--- 90,92 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:chert][DISPLAY_COLOR:6:7:0][TILE:28]
   [SEDIMENTARY]
 ***************
-*** 95,97 ****
+*** 98,100 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
-! [STATE_NAME_ADJ:ALL_SOLID:chalk][DISPLAY_COLOR:7:7:1][TILE:176][REACTION_CLASS:FLUX]
-  [SEDIMENTARY]
---- 95,97 ----
+! [STATE_NAME_ADJ:ALL_SOLID:chalk][DISPLAY_COLOR:7:7:1][TILE:176]
+  [REACTION_CLASS:FLUX]
+--- 98,100 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
-! [STATE_NAME_ADJ:ALL_SOLID:chalk][DISPLAY_COLOR:7:7:1][TILE:199][REACTION_CLASS:FLUX]
-  [SEDIMENTARY]
+! [STATE_NAME_ADJ:ALL_SOLID:chalk][DISPLAY_COLOR:7:7:1][TILE:199]
+  [REACTION_CLASS:FLUX]
 ***************
-*** 104,106 ****
+*** 109,111 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:granite][DISPLAY_COLOR:7:0:0][TILE:178]
   [IGNEOUS_INTRUSIVE]
---- 104,106 ----
+--- 109,111 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:granite][DISPLAY_COLOR:7:0:0][TILE:18]
   [IGNEOUS_INTRUSIVE]
 ***************
-*** 112,114 ****
+*** 117,119 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:diorite][DISPLAY_COLOR:0:7:1][TILE:176]
   [IGNEOUS_INTRUSIVE]
---- 112,114 ----
+--- 117,119 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:diorite][DISPLAY_COLOR:0:7:1][TILE:18]
   [IGNEOUS_INTRUSIVE]
 ***************
-*** 120,122 ****
+*** 125,127 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:gabbro][DISPLAY_COLOR:0:7:1][TILE:177]
   [IGNEOUS_INTRUSIVE]
---- 120,122 ----
+--- 125,127 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:gabbro][DISPLAY_COLOR:0:7:1][TILE:18]
   [IGNEOUS_INTRUSIVE]
 ***************
-*** 128,130 ****
+*** 133,135 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:rhyolite][DISPLAY_COLOR:0:7:1][TILE:',']
   [IGNEOUS_EXTRUSIVE]
---- 128,130 ----
+--- 133,135 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:rhyolite][DISPLAY_COLOR:0:7:1][TILE:18]
   [IGNEOUS_EXTRUSIVE]
 ***************
-*** 136,138 ****
+*** 141,143 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:basalt][DISPLAY_COLOR:0:7:1][TILE:'#']
   [IGNEOUS_EXTRUSIVE]
---- 136,138 ----
+--- 141,143 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:basalt][DISPLAY_COLOR:0:7:1][TILE:18]
   [IGNEOUS_EXTRUSIVE]
 ***************
-*** 144,146 ****
+*** 149,151 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:andesite][DISPLAY_COLOR:0:7:1][TILE:236]
   [IGNEOUS_EXTRUSIVE]
---- 144,146 ----
+--- 149,151 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:andesite][DISPLAY_COLOR:0:7:1][TILE:18]
   [IGNEOUS_EXTRUSIVE]
 ***************
-*** 152,154 ****
+*** 157,159 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:dacite][DISPLAY_COLOR:0:7:1][TILE:'.']
   [BASIC_COLOR:7:0]
---- 152,154 ----
+--- 157,159 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:dacite][DISPLAY_COLOR:0:7:1][TILE:18]
   [BASIC_COLOR:7:0]
 ***************
-*** 180,182 ****
+*** 185,187 ****
   	[BENDING_STRAIN_AT_YIELD:114]
 ! [STATE_NAME_ADJ:ALL_SOLID:obsidian][DISPLAY_COLOR:0:7:1][TILE:177][LAVA]
   [MAX_EDGE:20000]
---- 180,182 ----
+--- 185,187 ----
   	[BENDING_STRAIN_AT_YIELD:114]
 ! [STATE_NAME_ADJ:ALL_SOLID:obsidian][DISPLAY_COLOR:0:7:1][TILE:18][LAVA]
   [MAX_EDGE:20000]
 ***************
-*** 190,192 ****
+*** 195,197 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:quartzite][DISPLAY_COLOR:7:7:1][TILE:'-']
   [METAMORPHIC]
---- 190,192 ----
+--- 195,197 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:quartzite][DISPLAY_COLOR:7:7:1][TILE:29]
   [METAMORPHIC]
 ***************
-*** 199,201 ****
+*** 204,206 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:slate][DISPLAY_COLOR:0:7:1][TILE:'%']
   [METAMORPHIC]
---- 199,201 ----
+--- 204,206 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:slate][DISPLAY_COLOR:0:7:1][TILE:29]
   [METAMORPHIC]
 ***************
-*** 206,208 ****
+*** 211,213 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:phyllite][DISPLAY_COLOR:0:7:1][TILE:'-']
   [BASIC_COLOR:7:0]
---- 206,208 ----
+--- 211,213 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:phyllite][DISPLAY_COLOR:0:7:1][TILE:29]
   [BASIC_COLOR:7:0]
 ***************
-*** 214,216 ****
+*** 219,221 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:schist][DISPLAY_COLOR:6:7:0][TILE:'`']
   [METAMORPHIC]
---- 214,216 ----
+--- 219,221 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:schist][DISPLAY_COLOR:6:7:0][TILE:29]
   [METAMORPHIC]
 ***************
-*** 221,223 ****
+*** 226,228 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:gneiss][DISPLAY_COLOR:7:7:1][TILE:'=']
   [BASIC_COLOR:7:0]
---- 221,223 ----
+--- 226,228 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:gneiss][DISPLAY_COLOR:7:7:1][TILE:29]
   [BASIC_COLOR:7:0]
 ***************
-*** 229,231 ****
+*** 234,236 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
-! [STATE_NAME_ADJ:ALL_SOLID:marble][DISPLAY_COLOR:7:7:1][TILE:178][REACTION_CLASS:FLUX]
-  [METAMORPHIC]
---- 229,231 ----
+! [STATE_NAME_ADJ:ALL_SOLID:marble][DISPLAY_COLOR:7:7:1][TILE:178]
+  [REACTION_CLASS:FLUX]
+--- 234,236 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
-! [STATE_NAME_ADJ:ALL_SOLID:marble][DISPLAY_COLOR:7:7:1][TILE:199][REACTION_CLASS:FLUX]
-  [METAMORPHIC]
-diff -r -C1 '--exclude=language*' -w -B -E df_linux_4005/raw/objects/inorganic_stone_mineral.txt dfg_4005/raw/objects/inorganic_stone_mineral.txt
-*** df_linux_4005/raw/objects/inorganic_stone_mineral.txt	Sun Jul 27 22:26:39 2014
---- dfg_4005/raw/objects/inorganic_stone_mineral.txt	Sun Dec 25 19:16:56 2016
+! [STATE_NAME_ADJ:ALL_SOLID:marble][DISPLAY_COLOR:7:7:1][TILE:199]
+  [REACTION_CLASS:FLUX]
+Only in dfg_4201_custom/raw/objects: inorganic_stone_layer.txt.orig
+Only in dfg_4201_custom/raw/objects: inorganic_stone_layer.txt.rej
+diff -r -C1 '--exclude=language*' -w -B -E df_linux/raw/objects/inorganic_stone_mineral.txt dfg_4201_custom/raw/objects/inorganic_stone_mineral.txt
+*** df_linux/raw/objects/inorganic_stone_mineral.txt	Mon Nov 30 21:08:13 2015
+--- dfg_4201_custom/raw/objects/inorganic_stone_mineral.txt	Sun Dec 25 23:05:03 2016
 ***************
 *** 32,34 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -855,65 +858,66 @@ diff -r -C1 '--exclude=language*' -w -B -E df_linux_4005/raw/objects/inorganic_s
 ! [STATE_NAME_ADJ:ALL_SOLID:calcite][DISPLAY_COLOR:7:7:1][TILE:199]
   [REACTION_CLASS:FLUX]
 ***************
-*** 673,675 ****
+*** 674,676 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:saltpeter][DISPLAY_COLOR:6:7:1][TILE:'x']
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
---- 673,675 ----
+--- 674,676 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:saltpeter][DISPLAY_COLOR:6:7:1][TILE:182]
   [ENVIRONMENT:SEDIMENTARY:CLUSTER_SMALL:100]
 ***************
-*** 682,684 ****
+*** 683,685 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:alabaster][DISPLAY_COLOR:7:7:1][TILE:'^']
   [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
---- 682,684 ----
+--- 683,685 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:alabaster][DISPLAY_COLOR:7:7:1][TILE:182]
   [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
 ***************
-*** 691,693 ****
+*** 692,694 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:selenite][DISPLAY_COLOR:7:7:1][TILE:';']
   [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
---- 691,693 ----
+--- 692,694 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:selenite][DISPLAY_COLOR:7:7:1][TILE:182]
   [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
 ***************
-*** 700,702 ****
+*** 701,703 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:satinspar][DISPLAY_COLOR:7:7:1][TILE:'-']
   [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
---- 700,702 ----
+--- 701,703 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:satinspar][DISPLAY_COLOR:7:7:1][TILE:182]
   [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
 ***************
-*** 710,712 ****
+*** 711,713 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:anhydrite][DISPLAY_COLOR:7:7:1][TILE:'v']
   [BASIC_COLOR:7:0]
---- 710,712 ----
+--- 711,713 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:anhydrite][DISPLAY_COLOR:7:7:1][TILE:182]
   [BASIC_COLOR:7:0]
 ***************
-*** 724,726 ****
+*** 725,727 ****
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:alunite][DISPLAY_COLOR:7:7:1][TILE:'`']
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:CLUSTER:100]
---- 724,726 ----
+--- 725,727 ----
   [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 ! [STATE_NAME_ADJ:ALL_SOLID:alunite][DISPLAY_COLOR:7:7:1][TILE:182]
   [ENVIRONMENT:IGNEOUS_EXTRUSIVE:CLUSTER:100]
 ***************
-*** 739,741 ****
+*** 740,742 ****
   [DISPLAY_COLOR:3:7:1]
 ! [TILE:156]
   [MATERIAL_VALUE:250]
---- 739,741 ----
+--- 740,742 ----
   [DISPLAY_COLOR:3:7:1]
 ! [TILE:255]
   [MATERIAL_VALUE:250]
+Only in dfg_4201_custom/raw/objects: inorganic_stone_mineral.txt.orig
